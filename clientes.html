@@ -18,7 +18,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Nome da Empresa</a>
+				<a class="navbar-brand" href="#">PQ</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,7 +44,7 @@
 				</ol>
 			</div>
 			<div class="col-lg-2 col-lg-offset-3">
-				<a href="#modal-id" data-toggle="modal" class="btn btn-success btn-block"><i class="fa fa-plus"></i> Novo cliente</a>
+				<a href="#modal-id" data-toggle="modal" class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Novo cliente</a>
 			</div>
 			<div class="col-lg-1">
 				<div class="btn-group pull-right" role="group" aria-label="...">
@@ -66,9 +66,6 @@
 									</button>
 									<ul class="dropdown-menu">
 										<li><a href="#"><i class="fa fa-edit"></i> Editar em lote</a></li>
-										<li><a href="#"><i class="fa fa-barcode"></i> Imprimir boleto</a></li>
-										<li><a href="#"><i class="fa fa-check-circle"></i> Definir como recebido</a></li>
-										<li><a href="#"><i class="fa fa-times-circle"></i> Definir como não recebido</a></li>
 										<li role="separator" class="divider"></li>
 										<li><a href="#"><i class="fa fa-trash"></i> Excluir</a></li>
 									</ul>
@@ -91,14 +88,10 @@
 							</div>
 
 							<div class="col-lg-2">
-								<a href="#" class="btn btn-default btn-block"><i class="fa fa-share"></i> Exportar</a>
-							</div>
-
-							<div class="col-lg-2">
 								<a href="#" class="btn btn-default btn-block"><i class="fa fa-print"></i> Imprimir</a>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-lg-offset-2">
 								<div class="input-group">
 									<input type="text" class="form-control" aria-label="Pesquisar..." placeholder="Pesquisar...">
 									<div class="input-group-btn">
@@ -119,49 +112,23 @@
 									<thead>
 										<tr>
 											<th><input type="checkbox" name="#" id="#"></th>
-											<th>Data</th>
-											<th>Lançamento</th>
 											<th>Cliente</th>
-											<th>Descrição</th>
-											<th>Valor</th>
-											<th></th>
-											<th width="16%"></th>
+											<th>E-mail</th>
+											<th>CNPJ</th>
+											<th>Telefone</th>
+											<th width="90px"></th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr class="danger">
+										<tr>
 											<td><input type="checkbox" name="#" id="#"></td>
-											<td>28/12/2016</td>
-											<td><span class="badge">Vendas</span></td>
-											<td>Nome do cliente</td>
-											<td>Venda 01</td>
-											<td>150,00</td>
-											<td><i class="fa fa-barcode"></i></td>
+											<td>Ativo Casa</td>
+											<td>contato@ativocasa.com.br</td>
+											<td>11.542.171/0001-69</td>
+											<td>(11) 4545-6965</td>
 											<td>
 												<div class="btn-group btn-group-sm">
-													<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
-
-										<tr class="danger">
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>20/12/2016</td>
-											<td><span class="badge">Vendas</span></td>
-											<td>Nome do cliente</td>
-											<td>Venda 01</td>
-											<td>150,00</td>
-											<td><i class="fa fa-barcode"></i></td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 												</div>
 											</td>
@@ -169,18 +136,13 @@
 
 										<tr>
 											<td><input type="checkbox" name="#" id="#"></td>
-											<td>01/01/2015</td>
-											<td><span class="badge">Vendas</span></td>
-											<td>Nome do cliente</td>
-											<td>Venda 01</td>
-											<td class="text-success">150,00</td>
-											<td class="text-success"><i class="fa fa-check"></i></td>
+											<td>Bastidores Home</td>
+											<td>atendimento@bastidoreshome.com</td>
+											<td>61.142.745/0001-80</td>
+											<td>(19) 4566-1112</td>
 											<td>
 												<div class="btn-group btn-group-sm">
-													<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 												</div>
 											</td>
@@ -188,18 +150,13 @@
 
 										<tr>
 											<td><input type="checkbox" name="#" id="#"></td>
-											<td>01/01/2015</td>
-											<td><span class="badge">Vendas</span></td>
-											<td>Nome do cliente</td>
-											<td>Venda 01</td>
-											<td class="text-success">150,00</td>
-											<td class="text-success"><i class="fa fa-check"></i></td>
+											<td>Hub Eng</td>
+											<td>atendimento@hubeng.com</td>
+											<td>78.887.674/0001-47</td>
+											<td>(11) 4122-0025</td>
 											<td>
 												<div class="btn-group btn-group-sm">
-													<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 												</div>
 											</td>
@@ -207,18 +164,13 @@
 
 										<tr>
 											<td><input type="checkbox" name="#" id="#"></td>
-											<td>01/01/2015</td>
-											<td><span class="badge">Vendas</span></td>
-											<td>Nome do cliente</td>
-											<td>Venda 01</td>
-											<td class="text-success">150,00</td>
-											<td class="text-success"><i class="fa fa-check"></i></td>
+											<td>Mech Home</td>
+											<td>compras@mechhome.com.br</td>
+											<td>69.529.372/0001-06</td>
+											<td>(11) 2255-7886</td>
 											<td>
 												<div class="btn-group btn-group-sm">
-													<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 												</div>
 											</td>
@@ -226,18 +178,13 @@
 
 										<tr>
 											<td><input type="checkbox" name="#" id="#"></td>
-											<td>01/01/2015</td>
-											<td><span class="badge">Vendas</span></td>
-											<td>Nome do cliente</td>
-											<td>Venda 01</td>
-											<td class="text-success">150,00</td>
-											<td class="text-success"><i class="fa fa-check"></i></td>
+											<td>Ébano Car</td>
+											<td>compras@ebanocar.com.br</td>
+											<td>75.812.667/0001-98</td>
+											<td>(11) 5566-2895</td>
 											<td>
 												<div class="btn-group btn-group-sm">
-													<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 												</div>
 											</td>
@@ -245,18 +192,55 @@
 
 										<tr>
 											<td><input type="checkbox" name="#" id="#"></td>
-											<td>01/01/2015</td>
-											<td><span class="badge">Vendas</span></td>
-											<td>Nome do cliente</td>
-											<td>Venda 01</td>
-											<td class="text-success">150,00</td>
-											<td class="text-success"><i class="fa fa-check"></i></td>
+											<td>Constru Home</td>
+											<td>contato@construhome.com</td>
+											<td>18.467.756/0001-00</td>
+											<td>(11) 7025-4565</td>
 											<td>
 												<div class="btn-group btn-group-sm">
-													<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td><input type="checkbox" name="#" id="#"></td>
+											<td>Mega Engenharia</td>
+											<td>atendimento@megaengenharia.com.br</td>
+											<td>38.153.221/0001-72</td>
+											<td>(15) 4026-5647</td>
+											<td>
+												<div class="btn-group btn-group-sm">
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td><input type="checkbox" name="#" id="#"></td>
+											<td>Ébano Car</td>
+											<td>compras@prismacar.com.br</td>
+											<td>35.643.113/0001-90</td>
+											<td>(11) 1025-7855</td>
+											<td>
+												<div class="btn-group btn-group-sm">
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<td><input type="checkbox" name="#" id="#"></td>
+											<td>Ébano Car</td>
+											<td>compras@shakehome.com.br</td>
+											<td>76.353.354/0001-81</td>
+											<td>(11) 4022-7888</td>
+											<td>
+												<div class="btn-group btn-group-sm">
+													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 												</div>
 											</td>
@@ -267,195 +251,90 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Total no período (01 Jan 2017 - 30 Jan 2017)</h3>
-					</div>
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="row">
-									<div class="col-lg-8">Recebidas <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-4 text-success text-right">10.568,89</div>
-									<div class="col-lg-8">A receber <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-4 text-success text-right">2.568,78</div>
-									<div class="col-lg-8">Vencidas <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-4 text-success text-right">256,88</div>
-									<div class="col-lg-8">Total de recebimentos <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-4 text-right"><strong>13.394,55</strong></div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="row">
-									<div class="col-lg-9">Número de lançamentos</div>
-									<div class="col-lg-3 text-right">29</div>
-									<div class="col-lg-9">Número de lançamentos selecionados</div>
-									<div class="col-lg-3 text-right">0</div>
-									<div class="col-lg-9">Total de lançamentos selecionados <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-3 text-right"><strong>0,00</strong></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Novo recebimento -->
-	<div class="modal fade" id="modal-id">
-		<div class="modal-dialog modal-lg">
+	<!-- modal: novo cliente -->
+	<div class="modal fade" id="novo-cliente">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Novo recebimento</h4>
+					<h4 class="modal-title">Novo cliente</h4>
 				</div>
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
-							<div class="col-lg-4">
+							<div class="col-lg-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Cliente</label>
-									<input type="text" class="form-control" value="Parcela">
+									<input type="text" class="form-control" value="Holly Home">
 								</div>
 							</div>
 
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label for="#" class="control-label">Centro de custo</label>
-									<input type="text" class="form-control" value="Parcela">
+									<label for="#" class="control-label">CNPJ</label>
+									<input type="text" class="form-control" value="20.640.810/0001-10">
 								</div>
 							</div>
 
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label for="#" class="control-label">Observação</label>
-									<input type="text" class="form-control" value="Parcela">
+									<label for="#" class="control-label">E-mail</label>
+									<input type="text" class="form-control" value="atendimento@hollyhome.com">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">Telefone</label>
+									<input type="text" class="form-control" value="(11) 2566-1245">
 								</div>
 							</div>
 
 							<div class="col-lg-6">
 								<div class="form-group">
-									<label for="#" class="control-label">Descrição</label>
-									<input type="text" class="form-control" value="Parcela">
+									<label for="#" class="control-label">Endereço</label>
+									<input type="text" class="form-control" value="Rua da Sé">
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-2">
 								<div class="form-group">
-									<label for="#" class="control-label">Categoria</label>
-									<select name="#" id="#" class="form-control">
-										<option value="#">Selecione uma categoria</option>
-										<option value="vendas" selected="selected">Vendas</option>
-									</select>
+									<label for="#" class="control-label">Número</label>
+									<input type="text" class="form-control" value="123">
 								</div>
 							</div>
 
 							<div class="col-lg-4">
 								<div class="form-group">
-									<label for="#" class="control-label">Conta</label>
+									<label for="#" class="control-label">Bairro</label>
+									<input type="text" class="form-control" value="Centro">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">CEP</label>
+									<input type="text" class="form-control" value="01018-020">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">Cidade</label>
+									<input type="text" class="form-control" value="São Paulo">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">Estado</label>
 									<select name="#" id="#" class="form-control">
-										<option value="#">Selecione uma categoria</option>
-										<option value="vendas" selected="selected">Conta corrente no Itaú</option>
+										<option value="#">São Paulo</option>
 									</select>
-								</div>
-							</div>
-
-							<div class="col-lg-3">
-								<div class="form-group">
-									<label for="#" class="control-label">Data da competência</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="01/01/2017" value="01/01/2017">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3">
-								<div class="form-group">
-									<label for="#" class="control-label">Data vencimento</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="01/01/2017" value="01/01/2017">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-2">
-								<div class="form-group">
-									<label for="#" class="control-label">Valor</label>
-									<input type="text" class="form-control" value="R$ 150,00">
-								</div>
-							</div>
-
-							<div class="col-lg-12" style="border-top: 1px solid #ddd">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked> Repetir
-									</label>
-								</div>
-							</div>
-
-							<div class="col-lg-3">
-								<div class="form-group">
-									<label for="#">Frequência</label>
-									<select name="#" id="#" class="form-control">
-										<option value="#">Selecione uma frequência</option>
-										<option value="mensalmente" selected="selected">Mensalmente</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="col-lg-2">
-								<div class="form-group">
-									<label for="#">Ocorrências</label>
-									<input type="text" class="form-control" value="5">
-								</div>
-							</div>
-
-							<div class="col-lg-12" style="border-top: 1px solid #ddd">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked> Recebido
-									</label>
-								</div>
-							</div>
-
-							<div class="col-lg-3">
-								<div class="form-group">
-									<label for="#" class="control-label">Data recebimento</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="01/01/2017" value="01/01/2017">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3">
-								<div class="form-group">
-									<label for="#">Descontos / Taxas</label>
-									<input type="text" class="form-control" value="R$ 0,00">
-								</div>
-							</div>
-
-							<div class="col-lg-3">
-								<div class="form-group">
-									<label for="#">Juros / Multa</label>
-									<input type="text" class="form-control" value="R$ 0,00">
-								</div>
-							</div>
-
-							<div class="col-lg-3">
-								<div class="form-group">
-									<label for="#">Valor recebido</label>
-									<input type="text" class="form-control" value="R$ 150,00">
 								</div>
 							</div>
 						</div>
@@ -463,8 +342,111 @@
 				</div>
 				<div class="modal-footer">
 					<div class="btn-group">
-					<button type="button" class="btn btn-success">Salvar recebimento</button>
-						<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<button type="button" class="btn btn-primary">Salvar cliente</button>
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Adicionar e continuar adicionando</a></li>
+							<li><a href="#">Adicionar e continuar adicionando (manter campos)</a></li>
+						</ul>
+					</div>
+					<button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal: editar cliente -->
+	<div class="modal fade" id="editar-cliente">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Editar cliente</h4>
+				</div>
+				<div class="modal-body">
+					<form action="#">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="#" class="control-label">Cliente</label>
+									<input type="text" class="form-control" value="Holly Home">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">CNPJ</label>
+									<input type="text" class="form-control" value="20.640.810/0001-10">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">E-mail</label>
+									<input type="text" class="form-control" value="atendimento@hollyhome.com">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">Telefone</label>
+									<input type="text" class="form-control" value="(11) 2566-1245">
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="#" class="control-label">Endereço</label>
+									<input type="text" class="form-control" value="Rua da Sé">
+								</div>
+							</div>
+
+							<div class="col-lg-2">
+								<div class="form-group">
+									<label for="#" class="control-label">Número</label>
+									<input type="text" class="form-control" value="123">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">Bairro</label>
+									<input type="text" class="form-control" value="Centro">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">CEP</label>
+									<input type="text" class="form-control" value="01018-020">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">Cidade</label>
+									<input type="text" class="form-control" value="São Paulo">
+								</div>
+							</div>
+
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label for="#" class="control-label">Estado</label>
+									<select name="#" id="#" class="form-control">
+										<option value="#">São Paulo</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<div class="btn-group">
+					<button type="button" class="btn btn-primary">Salvar cliente</button>
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="caret"></span>
 							<span class="sr-only">Toggle Dropdown</span>
 						</button>

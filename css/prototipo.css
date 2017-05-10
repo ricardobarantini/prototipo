@@ -1,23 +1,17 @@
-.container {
-	// width: 1000px;
+body {
+	background: #F6F6F6;
 }
 
-.no-padding {
-	padding: 0px;
+.login-container {
+	margin-top: 75px;
 }
 
-.padding-15 {
-	padding: 15px;
+.btn-novo {
+	margin-bottom: 10px;
 }
 
-hr {
-	-moz-border-bottom-colors: none;
-	-moz-border-image: none;
-	-moz-border-left-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-top-colors: none;
-	border-color: #EEEEEE -moz-use-text-color #FFFFFF;
-	border-style: solid none;
-	border-width: 1px 0;
-	margin: 18px 0;
+@media (min-width: 1024px) {
+	.login-container {
+		margin-top: 150px;
+	}
 }

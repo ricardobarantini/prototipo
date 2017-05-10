@@ -18,7 +18,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Nome da Empresa</a>
+				<a class="navbar-brand" href="#">PQ</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -88,7 +88,7 @@
 												</div>
 
 												<div class="col-lg-3">
-													<a href="#" class="btn btn-success btn-block" style="margin-top: 24px"><i class="fa fa-clock-o"></i> Agendar</a>
+													<a href="#" class="btn btn-primary btn-block" style="margin-top: 24px"><i class="fa fa-clock-o"></i> Agendar</a>
 												</div>
 
 												<div class="col-lg-12">
@@ -129,6 +129,8 @@
 											<p><strong>Horário:</strong> 01:00</p>
 											<p><strong>Caminho:</strong> /backups</p>
 										</div>
+
+										<a href="#" class="btn btn-primary btn-block"><i class="fa fa-cloud-upload"></i> Restaurar backup</a>
 									</div>
 								</div>
 							</div>
@@ -144,7 +146,7 @@
 							<div class="panel-body">
 								<div class="row">
 									<div class="col-lg-3">
-										<a href="#" class="btn btn-success" data-toggle="modal" data-target="#modal-conta"><i class="fa fa-plus"></i> Nova conta bancária</a>
+										<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#nova-conta"><i class="fa fa-plus"></i> Nova conta bancária</a>
 									</div>
 									<div class="col-lg-12">
 										<table class="table">
@@ -163,10 +165,10 @@
 													<td>Caixa Econômica Federal</td>
 													<td>Conta Corrente Caixa</td>
 													<td>Pessoa Jurídica</td>
-													<td><span class="label label-success">Principal</span></td>
+													<td><span class="label label-primary">Principal</span></td>
 													<td class="text-right">
 														<div class="btn-group btn-group-sm">
-															<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
+															<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 															<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 														</div>
 													</td>
@@ -178,7 +180,7 @@
 													<td></td>
 													<td class="text-right">
 														<div class="btn-group btn-group-sm">
-															<a href="#" class="btn btn-default"><i class="fa fa-edit"></i></a>
+															<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 															<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 														</div>
 													</td>
@@ -196,7 +198,7 @@
 	</div>
 
 	<!-- modal: cadastro de conta bancária -->
-	<div class="modal fade" id="modal-conta">
+	<div class="modal fade" id="nova-conta">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -269,8 +271,98 @@
 				</div>
 				<div class="modal-footer">
 					<div class="btn-group">
-					<button type="button" class="btn btn-success">Salvar conta bancária</button>
-						<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<button type="button" class="btn btn-primary">Salvar conta bancária</button>
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Adicionar e continuar adicionando</a></li>
+							<li><a href="#">Adicionar e continuar adicionando (manter campos)</a></li>
+						</ul>
+					</div>
+					<button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal: editar conta bancária -->
+	<div class="modal fade" id="editar-conta">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Editar conta bancária</h4>
+				</div>
+				<div class="modal-body">
+					<form action="#">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="#" class="control-label">Banco</label>
+									<select name="#" id="#" class="form-control">
+										<option value="vendas" selected="selected">Bradesco</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="#" class="control-label">Descrição</label>
+									<input type="text" class="form-control" value="Conta Corrente do Bradesco">
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="#" class="control-label">Conta</label>
+									<input type="text" class="form-control" value="12345">
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="#" class="control-label">Agência</label>
+									<input type="text" class="form-control" value="12">
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="#" class="control-label">Tipo</label>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+											Pessoa física
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+											Pessoa jurídica
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="form-group">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="" checked>
+											Conta principal
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<div class="btn-group">
+					<button type="button" class="btn btn-primary">Salvar conta bancária</button>
+						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="caret"></span>
 							<span class="sr-only">Toggle Dropdown</span>
 						</button>
