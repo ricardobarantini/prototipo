@@ -2,16 +2,33 @@ body {
 	background: #F6F6F6;
 }
 
+.breadcrumb {
+	background: transparent;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
 .login-container {
 	margin-top: 75px;
 }
 
-.btn-novo {
+.btn-agendar {
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 @media (min-width: 1024px) {
 	.login-container {
 		margin-top: 150px;
+	}
+
+	.btn-agendar {
+		margin-top: 24px;
 	}
 }

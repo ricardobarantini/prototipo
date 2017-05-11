@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Clientes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/prototipo.css">
@@ -10,7 +11,6 @@
 <body>
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -21,7 +21,6 @@
 				<a class="navbar-brand" href="#">PQ</a>
 			</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">Clientes</a></li>
@@ -31,67 +30,79 @@
 					<li><a href="configuracoes.html">Configurações</a></li>
 					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
 				</ul>
-			</div><!-- /.navbar-collapse -->
+			</div>
 		</div>
 	</nav>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
-				<ol class="breadcrumb" style="background: transparent;">
+			<div class="col-lg-6 col-xs-12">
+				<ol class="breadcrumb">
 					<li><a href="#">Painel de controle</a></li>
 					<li class="active">Clientes</li>
 				</ol>
 			</div>
-			<div class="col-lg-2 col-lg-offset-3">
-				<a href="#modal-id" data-toggle="modal" class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Novo cliente</a>
+			<div class="col-lg-2 col-lg-offset-3 col-xs-9 mb-10">
+				<a href="#novo-cliente" data-toggle="modal" class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Novo cliente</a>
 			</div>
-			<div class="col-lg-1">
+			<div class="col-lg-1 col-xs-3">
 				<div class="btn-group pull-right" role="group" aria-label="...">
 					<button type="button" class="btn btn-default"><i class="fa fa-caret-left"></i></button>
 					<button type="button" class="btn btn-default"><i class="fa fa-caret-right"></i></button>
 				</div>
 			</div>
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-xs-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Clientes</h3>
 					</div>
 					<div class="panel-body">
 						<div class="row">
-							<div class="col-lg-2">
-								<div class="btn-group btn-block">
-									<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Ações <span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#"><i class="fa fa-edit"></i> Editar em lote</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a href="#"><i class="fa fa-trash"></i> Excluir</a></li>
-									</ul>
+							<div class="desktop-menu hidden-xs">
+								<div class="col-lg-2">
+									<div class="btn-group btn-block">
+										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Ações <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a href="#"><i class="fa fa-edit"></i> Editar em lote</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#"><i class="fa fa-trash"></i> Excluir</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-lg-2">
+									<div class="btn-group btn-block">
+										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Exibir <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-lg-2">
+									<a href="#" class="btn btn-default btn-block"><i class="fa fa-print"></i> Imprimir</a>
 								</div>
 							</div>
 
-							<div class="col-lg-2">
-								<div class="btn-group btn-block">
-									<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Exibir <span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something else here</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a href="#">Separated link</a></li>
-									</ul>
+							<div class="col-xs-12 mb-10">
+								<div class="mobile-menu hidden-lg">
+									<div class="btn-group btn-group-justified">
+										<a href="#" class="btn btn-default">Ações <span class="caret"></span></a>
+										<a href="#" class="btn btn-default">Exibir <span class="caret"></span></a>
+										<a href="#" class="btn btn-default">Imprimir</a>
+									</div>
 								</div>
 							</div>
 
-							<div class="col-lg-2">
-								<a href="#" class="btn btn-default btn-block"><i class="fa fa-print"></i> Imprimir</a>
-							</div>
-
-							<div class="col-lg-4 col-lg-offset-2">
+							<div class="col-lg-4 col-lg-offset-2 col-xs-12 mb-10">
 								<div class="input-group">
 									<input type="text" class="form-control" aria-label="Pesquisar..." placeholder="Pesquisar...">
 									<div class="input-group-btn">
@@ -107,146 +118,148 @@
 								</div>
 							</div>
 
-							<div class="col-lg-12">
-								<table class="table">
-									<thead>
-										<tr>
-											<th><input type="checkbox" name="#" id="#"></th>
-											<th>Cliente</th>
-											<th>E-mail</th>
-											<th>CNPJ</th>
-											<th>Telefone</th>
-											<th width="90px"></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Ativo Casa</td>
-											<td>contato@ativocasa.com.br</td>
-											<td>11.542.171/0001-69</td>
-											<td>(11) 4545-6965</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
+							<div class="col-lg-12 col-xs-12">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th><input type="checkbox" name="#" id="#"></th>
+												<th>Cliente</th>
+												<th>E-mail</th>
+												<th>CNPJ</th>
+												<th>Telefone</th>
+												<th width="90px"></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Ativo Casa</td>
+												<td>contato@ativocasa.com.br</td>
+												<td>11.542.171/0001-69</td>
+												<td>(11) 4545-6965</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
 
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Bastidores Home</td>
-											<td>atendimento@bastidoreshome.com</td>
-											<td>61.142.745/0001-80</td>
-											<td>(19) 4566-1112</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Bastidores Home</td>
+												<td>atendimento@bastidoreshome.com</td>
+												<td>61.142.745/0001-80</td>
+												<td>(19) 4566-1112</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
 
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Hub Eng</td>
-											<td>atendimento@hubeng.com</td>
-											<td>78.887.674/0001-47</td>
-											<td>(11) 4122-0025</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Hub Eng</td>
+												<td>atendimento@hubeng.com</td>
+												<td>78.887.674/0001-47</td>
+												<td>(11) 4122-0025</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
 
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Mech Home</td>
-											<td>compras@mechhome.com.br</td>
-											<td>69.529.372/0001-06</td>
-											<td>(11) 2255-7886</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Mech Home</td>
+												<td>compras@mechhome.com.br</td>
+												<td>69.529.372/0001-06</td>
+												<td>(11) 2255-7886</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
 
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Ébano Car</td>
-											<td>compras@ebanocar.com.br</td>
-											<td>75.812.667/0001-98</td>
-											<td>(11) 5566-2895</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Ébano Car</td>
+												<td>compras@ebanocar.com.br</td>
+												<td>75.812.667/0001-98</td>
+												<td>(11) 5566-2895</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
 
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Constru Home</td>
-											<td>contato@construhome.com</td>
-											<td>18.467.756/0001-00</td>
-											<td>(11) 7025-4565</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Constru Home</td>
+												<td>contato@construhome.com</td>
+												<td>18.467.756/0001-00</td>
+												<td>(11) 7025-4565</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
 
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Mega Engenharia</td>
-											<td>atendimento@megaengenharia.com.br</td>
-											<td>38.153.221/0001-72</td>
-											<td>(15) 4026-5647</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Mega Engenharia</td>
+												<td>atendimento@megaengenharia.com.br</td>
+												<td>38.153.221/0001-72</td>
+												<td>(15) 4026-5647</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
 
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Ébano Car</td>
-											<td>compras@prismacar.com.br</td>
-											<td>35.643.113/0001-90</td>
-											<td>(11) 1025-7855</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Ébano Car</td>
+												<td>compras@prismacar.com.br</td>
+												<td>35.643.113/0001-90</td>
+												<td>(11) 1025-7855</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
 
-										<tr>
-											<td><input type="checkbox" name="#" id="#"></td>
-											<td>Ébano Car</td>
-											<td>compras@shakehome.com.br</td>
-											<td>76.353.354/0001-81</td>
-											<td>(11) 4022-7888</td>
-											<td>
-												<div class="btn-group btn-group-sm">
-													<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-													<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>Ébano Car</td>
+												<td>compras@shakehome.com.br</td>
+												<td>76.353.354/0001-81</td>
+												<td>(11) 4022-7888</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-cliente" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -266,70 +279,70 @@
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
-							<div class="col-lg-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Cliente</label>
 									<input type="text" class="form-control" value="Holly Home">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">CNPJ</label>
 									<input type="text" class="form-control" value="20.640.810/0001-10">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">E-mail</label>
 									<input type="text" class="form-control" value="atendimento@hollyhome.com">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Telefone</label>
 									<input type="text" class="form-control" value="(11) 2566-1245">
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-6 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Endereço</label>
 									<input type="text" class="form-control" value="Rua da Sé">
 								</div>
 							</div>
 
-							<div class="col-lg-2">
+							<div class="col-lg-2 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Número</label>
 									<input type="text" class="form-control" value="123">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Bairro</label>
 									<input type="text" class="form-control" value="Centro">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">CEP</label>
 									<input type="text" class="form-control" value="01018-020">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Cidade</label>
 									<input type="text" class="form-control" value="São Paulo">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Estado</label>
 									<select name="#" id="#" class="form-control">
@@ -369,49 +382,49 @@
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
-							<div class="col-lg-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Cliente</label>
 									<input type="text" class="form-control" value="Holly Home">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">CNPJ</label>
 									<input type="text" class="form-control" value="20.640.810/0001-10">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">E-mail</label>
 									<input type="text" class="form-control" value="atendimento@hollyhome.com">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Telefone</label>
 									<input type="text" class="form-control" value="(11) 2566-1245">
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-6 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Endereço</label>
 									<input type="text" class="form-control" value="Rua da Sé">
 								</div>
 							</div>
 
-							<div class="col-lg-2">
+							<div class="col-lg-2 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Número</label>
 									<input type="text" class="form-control" value="123">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Bairro</label>
 									<input type="text" class="form-control" value="Centro">
@@ -425,14 +438,14 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Cidade</label>
 									<input type="text" class="form-control" value="São Paulo">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Estado</label>
 									<select name="#" id="#" class="form-control">

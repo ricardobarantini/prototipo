@@ -39,17 +39,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-xs-12">
-				<ol class="breadcrumb" style="background: transparent;">
+				<ol class="breadcrumb">
 					<li><a href="#">Painel de controle</a></li>
 					<li class="active">Contas a receber</li>
 				</ol>
 			</div>
-			<div class="col-lg-2 col-xs-12 btn-novo">
+			<div class="col-lg-2 col-xs-12 mb-10">
 				<a href="#novo-recebimento" data-toggle="modal" class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Novo recebimento</a>
 			</div>
-			<div class="col-lg-3 col-xs-9">
+			<div class="col-lg-3 col-xs-9 mb-10">
 				<select name="#" id="#" class="form-control">
-					<option value="#">01 Jan 2017 - 30 Jan 2017</option>
+					<option value="#">01 Jan 2017 - 31 Jan 2017</option>
 				</select>
 			</div>
 			<div class="col-lg-1 col-xs-3">
@@ -65,46 +65,71 @@
 					</div>
 					<div class="panel-body">
 						<div class="row">
-							<div class="col-lg-2 col-xs-6">
-								<div class="btn-group btn-block">
-									<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Ações <span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#"><i class="fa fa-edit"></i> Editar em lote</a></li>
-										<li><a href="#"><i class="fa fa-barcode"></i> Imprimir boleto</a></li>
-										<li><a href="#"><i class="fa fa-check-circle"></i> Definir como recebido</a></li>
-										<li><a href="#"><i class="fa fa-times-circle"></i> Definir como não recebido</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a href="#"><i class="fa fa-trash"></i> Excluir</a></li>
-									</ul>
+							<!-- desktop -->
+							<div class="desktop-menu hidden-xs">
+								<div class="col-lg-2 col-xs-12 mb-10">
+									<div class="btn-group btn-block">
+										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Ações <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a href="#"><i class="fa fa-edit"></i> Editar em lote</a></li>
+											<li><a href="#"><i class="fa fa-barcode"></i> Imprimir boleto</a></li>
+											<li><a href="#"><i class="fa fa-check-circle"></i> Definir como recebido</a></li>
+											<li><a href="#"><i class="fa fa-times-circle"></i> Definir como não recebido</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#"><i class="fa fa-trash"></i> Excluir</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-lg-2 col-xs-12 mb-10">
+									<div class="btn-group btn-block">
+										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Exibir <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-lg-2 col-xs-12 mb-10">
+									<div class="btn-group btn-block">
+										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Importar e exportar <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a href="#exportar" data-toggle="modal"><i class="fa fa-download"></i> Exportar para arquivo</a></li>
+											<li><a href="#importar" data-toggle="modal"><i class="fa fa-upload"></i> Importar de arquivo</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-lg-2 col-xs-12">
+									<a href="#" class="btn btn-default btn-block"><i class="fa fa-print"></i> Imprimir</a>
 								</div>
 							</div>
 
-							<div class="col-lg-2 col-xs-6">
-								<div class="btn-group btn-block">
-									<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Exibir <span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu">
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something else here</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a href="#">Separated link</a></li>
-									</ul>
+							<!-- mobile -->
+							<div class="mobile-menu hidden-lg">
+								<div class="col-xs-12">
+									<div class="btn-group btn-group-justified mb-10">
+										<a href="#" class="btn btn-default">Ações <span class="caret"></span></a>
+										<a href="#" class="btn btn-default">Exibir <span class="caret"></span></a>
+									</div>
+									<div class="btn-group btn-group-justified">
+										<a href="#" class="btn btn-default">Impotar e exportar <span class="caret"></span></a>
+										<a href="#" class="btn btn-default">Imprimir</a>
+									</div>
 								</div>
 							</div>
 
-							<div class="col-lg-2 col-xs-6">
-								<a href="#exportar" data-toggle="modal" class="btn btn-default btn-block"><i class="fa fa-share"></i> Exportar</a>
-							</div>
-
-							<div class="col-lg-2 col-xs-6">
-								<a href="#" class="btn btn-default btn-block"><i class="fa fa-print"></i> Imprimir</a>
-							</div>
-
-							<div class="col-lg-4 col-xs-12">
+							<div class="col-lg-4 col-xs-12 mb-10">
 								<div class="input-group">
 									<input type="text" class="form-control" aria-label="Pesquisar..." placeholder="Pesquisar...">
 									<div class="input-group-btn">
@@ -144,7 +169,7 @@
 												<td>Venda 23</td>
 												<td>5.458,32</td>
 												<td><i class="fa fa-barcode"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
@@ -163,7 +188,7 @@
 												<td>Venda 22</td>
 												<td class="text-success">7.861,19</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
@@ -182,7 +207,7 @@
 												<td>Venda 21</td>
 												<td>9.438,15</td>
 												<td><i class="fa fa-barcode"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
@@ -201,7 +226,7 @@
 												<td>Venda 20</td>
 												<td class="text-success">4.566,19</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
@@ -220,7 +245,7 @@
 												<td>Venda 19</td>
 												<td class="text-success">5.660,13</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
@@ -239,7 +264,7 @@
 												<td>Venda 18</td>
 												<td class="text-success">7.744,11</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
@@ -258,7 +283,7 @@
 												<td>Venda 17</td>
 												<td class="text-success">10.711,00</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
@@ -277,7 +302,7 @@
 												<td>Venda 16</td>
 												<td class="text-success">2.445,99</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
@@ -296,7 +321,7 @@
 												<td>Venda 15</td>
 												<td>2.365,25</td>
 												<td><i class="fa fa-barcode"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
@@ -315,7 +340,7 @@
 												<td>Venda 14</td>
 												<td>7.856,14</td>
 												<td><i class="fa fa-barcode"></i></td>
-												<td>
+												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
@@ -335,30 +360,30 @@
 
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Total no período (01 Jan 2017 - 30 Jan 2017)</h3>
+						<h3 class="panel-title">Total no período (01 Jan 2017 - 31 Jan 2017)</h3>
 					</div>
 					<div class="panel-body">
 						<div class="row">
-							<div class="col-lg-6">
+							<div class="col-lg-6 col-xs-12">
 								<div class="row">
-									<div class="col-lg-8">Recebidas <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-4 text-success text-right">38.988,61</div>
-									<div class="col-lg-8">A receber <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-4 text-success text-right">25.117,86</div>
-									<div class="col-lg-8">Vencidas <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-4 text-success text-right">10.221,39</div>
-									<div class="col-lg-8">Total de recebimentos <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-4 text-right"><strong>64.106,47</strong></div>
+									<div class="col-lg-8 col-xs-8">Recebidas <span class="text-muted">(R$)</span></div>
+									<div class="col-lg-4 col-xs-4 text-success text-right">38.988,61</div>
+									<div class="col-lg-8 col-xs-8">A receber <span class="text-muted">(R$)</span></div>
+									<div class="col-lg-4 col-xs-4 text-success text-right">25.117,86</div>
+									<div class="col-lg-8 col-xs-8">Vencidas <span class="text-muted">(R$)</span></div>
+									<div class="col-lg-4 col-xs-4 text-success text-right">10.221,39</div>
+									<div class="col-lg-8 col-xs-8">Total de recebimentos <span class="text-muted">(R$)</span></div>
+									<div class="col-lg-4 col-xs-4 text-right"><strong>64.106,47</strong></div>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-6 col-xs-12">
 								<div class="row">
-									<div class="col-lg-9">Número de lançamentos</div>
-									<div class="col-lg-3 text-right">10</div>
-									<div class="col-lg-9">Número de lançamentos selecionados</div>
-									<div class="col-lg-3 text-right">0</div>
-									<div class="col-lg-9">Total de lançamentos selecionados <span class="text-muted">(R$)</span></div>
-									<div class="col-lg-3 text-right"><strong>0,00</strong></div>
+									<div class="col-lg-9 col-xs-9">Número de lançamentos</div>
+									<div class="col-lg-3 col-xs-3 text-right">10</div>
+									<div class="col-lg-9 col-xs-9">Número de lançamentos selecionados</div>
+									<div class="col-lg-3 col-xs-3 text-right">0</div>
+									<div class="col-lg-9 col-xs-9">Total de lançamentos selecionados <span class="text-muted">(R$)</span></div>
+									<div class="col-lg-3 col-xs-3 text-right"><strong>0,00</strong></div>
 								</div>
 							</div>
 						</div>
@@ -379,35 +404,35 @@
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Cliente</label>
 									<input type="text" class="form-control" value="Hub Eng">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Centro de custo</label>
 									<input type="text" class="form-control" value="">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Observação</label>
 									<input type="text" class="form-control" value="">
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-6 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Descrição</label>
 									<input type="text" class="form-control" value="Venda 24">
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-6 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Categoria</label>
 									<select name="#" id="#" class="form-control">
@@ -416,7 +441,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Conta</label>
 									<select name="#" id="#" class="form-control">
@@ -425,7 +450,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Data da competência</label>
 									<div class="input-group">
@@ -437,7 +462,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Data vencimento</label>
 									<div class="input-group">
@@ -449,14 +474,14 @@
 								</div>
 							</div>
 
-							<div class="col-lg-2">
+							<div class="col-lg-2 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Valor</label>
 									<input type="text" class="form-control" value="R$ 8.756,14">
 								</div>
 							</div>
 
-							<div class="col-lg-12" style="border-top: 1px solid #ddd">
+							<div class="col-lg-12 col-xs-12" style="border-top: 1px solid #ddd">
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" checked> Repetir
@@ -464,7 +489,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#">Frequência</label>
 									<select name="#" id="#" class="form-control">
@@ -474,14 +499,14 @@
 								</div>
 							</div>
 
-							<div class="col-lg-2">
+							<div class="col-lg-2 col-xs-12">
 								<div class="form-group">
 									<label for="#">Ocorrências</label>
 									<input type="text" class="form-control" value="5">
 								</div>
 							</div>
 
-							<div class="col-lg-12" style="border-top: 1px solid #ddd">
+							<div class="col-lg-12 col-xs-12" style="border-top: 1px solid #ddd">
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" checked> Recebido
@@ -489,7 +514,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Data recebimento</label>
 									<div class="input-group">
@@ -501,21 +526,21 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#">Descontos / Taxas</label>
 									<input type="text" class="form-control" value="R$ 0,00">
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#">Juros / Multa</label>
 									<input type="text" class="form-control" value="R$ 0,00">
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#">Valor recebido</label>
 									<input type="text" class="form-control" value="R$ 8.756,14">
@@ -553,35 +578,35 @@
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Cliente</label>
 									<input type="text" class="form-control" value="Hub Eng">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Centro de custo</label>
 									<input type="text" class="form-control" value="">
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Observação</label>
 									<input type="text" class="form-control" value="">
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-6 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Descrição</label>
 									<input type="text" class="form-control" value="Venda 21">
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-6 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Categoria</label>
 									<select name="#" id="#" class="form-control">
@@ -590,7 +615,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Conta</label>
 									<select name="#" id="#" class="form-control">
@@ -599,7 +624,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Data da competência</label>
 									<div class="input-group">
@@ -611,7 +636,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Data vencimento</label>
 									<div class="input-group">
@@ -623,14 +648,14 @@
 								</div>
 							</div>
 
-							<div class="col-lg-2">
+							<div class="col-lg-2 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Valor</label>
 									<input type="text" class="form-control" value="R$ 8.756,14">
 								</div>
 							</div>
 
-							<div class="col-lg-12" style="border-top: 1px solid #ddd">
+							<div class="col-lg-12 col-xs-12" style="border-top: 1px solid #ddd">
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" checked> Repetir
@@ -638,7 +663,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#">Frequência</label>
 									<select name="#" id="#" class="form-control">
@@ -648,14 +673,14 @@
 								</div>
 							</div>
 
-							<div class="col-lg-2">
+							<div class="col-lg-2 col-xs-12">
 								<div class="form-group">
 									<label for="#">Ocorrências</label>
 									<input type="text" class="form-control" value="5">
 								</div>
 							</div>
 
-							<div class="col-lg-12" style="border-top: 1px solid #ddd">
+							<div class="col-lg-12 col-xs-12" style="border-top: 1px solid #ddd">
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" checked> Recebido
@@ -663,7 +688,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Data recebimento</label>
 									<div class="input-group">
@@ -675,21 +700,21 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#">Descontos / Taxas</label>
 									<input type="text" class="form-control" value="R$ 0,00">
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#">Juros / Multa</label>
 									<input type="text" class="form-control" value="R$ 0,00">
 								</div>
 							</div>
 
-							<div class="col-lg-3">
+							<div class="col-lg-3 col-xs-12">
 								<div class="form-group">
 									<label for="#">Valor recebido</label>
 									<input type="text" class="form-control" value="R$ 8.756,14">
@@ -728,6 +753,31 @@
 					<p>Exporte todos registros de contas a receber para um arquivo <strong>.xlsx</strong>.</p>
 					<p><strong>Total de registros: 10</strong></p>
 					<a href="#" class="btn btn-primary"><i class="fa fa-cloud-download"></i> Baixar arquivo</a>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal: importar -->
+	<div class="modal fade" id="importar">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Importar contas a receber</h4>
+				</div>
+				<div class="modal-body">
+					<p>Importe os registros de contas a receber de para um arquivo <strong>.xlsx</strong>.</p>
+					<form action="#">
+						<div class="form-group">
+							<label for="#">Selecione o arquivo</label>
+							<input type="file" name="#" id="#">
+						</div>
+					</form>
+					<a href="#" class="btn btn-primary"><i class="fa fa-cloud-upload"></i> Enviar arquivo</a>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
