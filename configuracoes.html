@@ -42,155 +42,56 @@
 					<li class="active">Configurações</li>
 				</ol>
 			</div>
+			<div class="col-lg-2 col-lg-offset-4 col-xs-12 col-xs-offset-0 mb-10">
+				<a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#nova-conta"><i class="fa fa-plus"></i> Nova conta bancária</a>
+			</div>
 			<div class="col-lg-12 col-xs-12">
-				<ul class="nav nav-pills" id="tabs" style="margin-bottom: 15px">
-					<li role="presentation" class="active"><a href="#backup" aria-controls="backup" role="tab" data-toggle="tab">Backup</a></li>
-					<li role="presentation"><a href="#contas-bancarias" aria-controls="contas-bancarias" role="tab" data-toggle="tab">Contas bancárias</a></li>
-				</ul>
-
-				<div class="tab-content">
-					<!-- tab: backup -->
-					<div class="tab-pane active" role="tabpanel" id="backup">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Backup</h3>
-							</div>
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-lg-9 col-xs-12">
-										<h4>Agendamento de backup</h4>
-										<form action="#">
-											<div class="row">
-												<div class="col-lg-3 col-xs-6">
-													<div class="form-group">
-														<label for="#">Frequência</label>
-														<select name="#" id="#" class="form-control">
-															<option value="#">Diariamente</option>
-														</select>
-													</div>
-												</div>
-
-												<div class="col-lg-3 col-xs-6">
-													<div class="form-group">
-														<label for="#">Horário</label>
-														<select name="#" id="#" class="form-control">
-															<option value="#">02:00</option>
-														</select>
-													</div>
-												</div>
-
-												<div class="col-lg-3 col-xs-12">
-													<div class="form-group">
-														<label for="#">Caminho</label>
-														<input type="text" class="form-control" value="/backups">
-													</div>
-												</div>
-
-												<div class="col-lg-3 col-xs-12">
-													<a href="#" class="btn btn-primary btn-block btn-agendar"><i class="fa fa-clock-o"></i> Agendar</a>
-												</div>
-
-												<div class="col-lg-12 col-xs-12 mt-10">
-													<div class="table-responsive">
-														<table class="table">
-															<thead>
-																<tr>
-																	<th>Arquivo</th>
-																	<th>Data</th>
-																	<th>Tamanho</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><a href="#">backups/backup-completo-01012017-0100.zip</a></td>
-																	<td>01/01/2017 01:00</td>
-																	<td>563mb</td>
-																</tr>
-																<tr>
-																	<td><a href="#">backups/backup-completo-31122017-0100.zip</a></td>
-																	<td>31/12/2016 01:00</td>
-																	<td>560mb</td>
-																</tr>
-																<tr>
-																	<td><a href="#">backups/backup-completo-30122017-0100.zip</a></td>
-																	<td>30/12/2016 01:00</td>
-																	<td>558mb</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</div>
-											</div>
-										</form>
-									</div>
-									<div class="col-lg-3 col-xs-12">
-										<div class="well well-sm">
-											<h4>Backup programado</h4>
-											<p><strong>Frequência:</strong> diariamente</p>
-											<p><strong>Horário:</strong> 01:00</p>
-											<p><strong>Caminho:</strong> /backups</p>
-										</div>
-
-										<a href="#restaurar" data-toggle="modal" class="btn btn-primary btn-block"><i class="fa fa-cloud-upload"></i> Restaurar backup</a>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Contas bancárias</h3>
 					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12 col-xs-12 mt-10">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Banco</th>
+												<th>Descrição</th>
+												<th>Tipo</th>
+												<th>Status</th>
+												<th></th>
+											</tr>
+										</thead>
 
-					<!-- tab: contas bancárias -->
-					<div class="tab-pane" role="tabpanel" id="contas-bancarias">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">Contas bancárias</h3>
-							</div>
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-lg-3 col-xs-12">
-										<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#nova-conta"><i class="fa fa-plus"></i> Nova conta bancária</a>
-									</div>
-									<div class="col-lg-12 col-xs-12 mt-10">
-										<div class="table-responsive">
-											<table class="table">
-												<thead>
-													<tr>
-														<th>Banco</th>
-														<th>Descrição</th>
-														<th>Tipo</th>
-														<th>Status</th>
-														<th></th>
-													</tr>
-												</thead>
-
-												<tbody>
-													<tr>
-														<td>Caixa Econômica Federal</td>
-														<td>Conta Corrente Caixa</td>
-														<td>Pessoa Jurídica</td>
-														<td><span class="label label-primary">Principal</span></td>
-														<td class="text-right hidden-xs">
-															<div class="btn-group btn-group-sm">
-																<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-																<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Banco do Brasil</td>
-														<td>Conta Corrente BB</td>
-														<td>Pessoa Jurídica</td>
-														<td></td>
-														<td class="text-right hidden-xs">
-															<div class="btn-group btn-group-sm">
-																<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-																<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
+										<tbody>
+											<tr>
+												<td>Caixa Econômica Federal</td>
+												<td>Conta Corrente Caixa</td>
+												<td>Pessoa Jurídica</td>
+												<td><span class="label label-primary">Principal</span></td>
+												<td class="text-right hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>Banco do Brasil</td>
+												<td>Conta Corrente BB</td>
+												<td>Pessoa Jurídica</td>
+												<td></td>
+												<td class="text-right hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
@@ -375,31 +276,6 @@
 						</ul>
 					</div>
 					<button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- modal: restaurar backup -->
-	<div class="modal fade" id="restaurar">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Restaurar backup</h4>
-				</div>
-				<div class="modal-body">
-					<p>Restaure os dados de um backup anterior.</p>
-					<form action="#">
-						<div class="form-group">
-							<label for="#">Selecione o arquivo</label>
-							<input type="file" name="#" id="#">
-						</div>
-					</form>
-					<a href="#" class="btn btn-primary"><i class="fa fa-cloud-upload"></i> Restaurar backup</a>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
 				</div>
 			</div>
 		</div>

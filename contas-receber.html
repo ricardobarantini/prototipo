@@ -74,7 +74,6 @@
 										</button>
 										<ul class="dropdown-menu">
 											<li><a href="#"><i class="fa fa-edit"></i> Editar em lote</a></li>
-											<li><a href="#"><i class="fa fa-barcode"></i> Imprimir boleto</a></li>
 											<li><a href="#"><i class="fa fa-check-circle"></i> Definir como recebido</a></li>
 											<li><a href="#"><i class="fa fa-times-circle"></i> Definir como não recebido</a></li>
 											<li role="separator" class="divider"></li>
@@ -101,11 +100,11 @@
 								<div class="col-lg-2 col-xs-12 mb-10">
 									<div class="btn-group btn-block">
 										<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Importar e exportar <span class="caret"></span>
+											Remessa e retorno <span class="caret"></span>
 										</button>
 										<ul class="dropdown-menu">
-											<li><a href="#exportar" data-toggle="modal"><i class="fa fa-download"></i> Exportar para arquivo</a></li>
-											<li><a href="#importar" data-toggle="modal"><i class="fa fa-upload"></i> Importar de arquivo</a></li>
+											<li><a href="#remessa" data-toggle="modal"><i class="fa fa-download"></i> Gerar arquivo de remessa</a></li>
+											<li><a href="#retorno" data-toggle="modal"><i class="fa fa-upload"></i> Importar arquivo de retorno</a></li>
 										</ul>
 									</div>
 								</div>
@@ -123,13 +122,13 @@
 										<a href="#" class="btn btn-default">Exibir <span class="caret"></span></a>
 									</div>
 									<div class="btn-group btn-group-justified">
-										<a href="#" class="btn btn-default">Impotar e exportar <span class="caret"></span></a>
+										<a href="#" class="btn btn-default">Remessa e retorno <span class="caret"></span></a>
 										<a href="#" class="btn btn-default">Imprimir</a>
 									</div>
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-xs-12 mb-10">
+							<div class="col-lg-4 col-xs-12 mb-10 mt-10">
 								<div class="input-group">
 									<input type="text" class="form-control" aria-label="Pesquisar..." placeholder="Pesquisar...">
 									<div class="input-group-btn">
@@ -151,202 +150,161 @@
 										<thead>
 											<tr>
 												<th><input type="checkbox" name="#" id="#"></th>
-												<th>Data</th>
-												<th>Lançamento</th>
+												<th>Número da Duplicata</th>
+												<th>Data de vencimento</th>
 												<th>Cliente</th>
-												<th>Descrição</th>
 												<th>Valor</th>
 												<th></th>
-												<th width="180px"></th>
+												<th width="100px"></th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564595</td>
 												<td>29/01/2017</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Ativo Casa</td>
-												<td>Venda 23</td>
 												<td>5.458,32</td>
 												<td><i class="fa fa-barcode"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr>
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564592</td>
 												<td>27/01/2017</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Bastidores Home</td>
-												<td>Venda 22</td>
 												<td class="text-success">7.861,19</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr>
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564588</td>
 												<td>26/01/2017</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Hub Eng</td>
-												<td>Venda 21</td>
 												<td>9.438,15</td>
 												<td><i class="fa fa-barcode"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr>
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564584</td>
 												<td>24/01/2017</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Mech Home</td>
-												<td>Venda 20</td>
 												<td class="text-success">4.566,19</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr>
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564575</td>
 												<td>24/01/2017</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Ébano Car</td>
-												<td>Venda 19</td>
 												<td class="text-success">5.660,13</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr>
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564571</td>
 												<td>18/01/2017</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Constru Home</td>
-												<td>Venda 18</td>
 												<td class="text-success">7.744,11</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr>
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564564</td>
 												<td>10/01/2017</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Mega Engenharia</td>
-												<td>Venda 17</td>
 												<td class="text-success">10.711,00</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr>
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564561</td>
 												<td>05/01/2017</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Ativo Casa</td>
-												<td>Venda 16</td>
 												<td class="text-success">2.445,99</td>
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr class="danger">
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564559</td>
 												<td>28/12/2016</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Prisma Car</td>
-												<td>Venda 15</td>
 												<td>2.365,25</td>
 												<td><i class="fa fa-barcode"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
 
 											<tr class="danger">
 												<td><input type="checkbox" name="#" id="#"></td>
+												<td>564557</td>
 												<td>20/12/2016</td>
-												<td><span class="badge">Vendas</span></td>
 												<td>Shake Home</td>
-												<td>Venda 14</td>
 												<td>7.856,14</td>
 												<td><i class="fa fa-barcode"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
 														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-print"></i></a>
-														<a href="#enviar-email" data-toggle="modal" class="btn btn-default"><i class="fa fa-envelope-o"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
 													</div>
 												</td>
 											</tr>
@@ -395,7 +353,7 @@
 
 	<!-- modal: novo recebimento -->
 	<div class="modal fade" id="novo-recebimento">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -404,146 +362,31 @@
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
-							<div class="col-lg-4 col-xs-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Cliente</label>
-									<input type="text" class="form-control" value="Hub Eng">
-								</div>
-							</div>
-
-							<div class="col-lg-4 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Centro de custo</label>
-									<input type="text" class="form-control" value="">
-								</div>
-							</div>
-
-							<div class="col-lg-4 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Observação</label>
-									<input type="text" class="form-control" value="">
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Descrição</label>
-									<input type="text" class="form-control" value="Venda 24">
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Categoria</label>
-									<select name="#" id="#" class="form-control">
-										<option value="vendas" selected="selected">Vendas</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="col-lg-4 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Conta</label>
-									<select name="#" id="#" class="form-control">
-										<option value="vendas" selected="selected">Conta corrente no Itaú</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Data da competência</label>
+									<label for="#" class="control-label">Número da duplicata</label>
 									<div class="input-group">
-										<input type="text" class="form-control" placeholder="01/01/2017" value="30/01/2017">
+										<input type="text" class="form-control" value="1289453354">
 										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+											<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
 										</span>
 									</div>
 								</div>
 							</div>
 
-							<div class="col-lg-3 col-xs-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Data vencimento</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="01/01/2017" value="10/02/2017">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-2 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Valor</label>
-									<input type="text" class="form-control" value="R$ 8.756,14">
-								</div>
-							</div>
-
-							<div class="col-lg-12 col-xs-12" style="border-top: 1px solid #ddd">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked> Repetir
-									</label>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#">Frequência</label>
-									<select name="#" id="#" class="form-control">
-										<option value="#">Selecione uma frequência</option>
-										<option value="mensalmente" selected="selected">Mensalmente</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="col-lg-2 col-xs-12">
-								<div class="form-group">
-									<label for="#">Ocorrências</label>
+									<label for="#">Quantidade de parcelas</label>
 									<input type="text" class="form-control" value="5">
 								</div>
 							</div>
 
-							<div class="col-lg-12 col-xs-12" style="border-top: 1px solid #ddd">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked> Recebido
-									</label>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Data recebimento</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="01/01/2017" value="30/01/2017">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#">Descontos / Taxas</label>
-									<input type="text" class="form-control" value="R$ 0,00">
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#">Juros / Multa</label>
-									<input type="text" class="form-control" value="R$ 0,00">
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#">Valor recebido</label>
-									<input type="text" class="form-control" value="R$ 8.756,14">
+									<label for="#">Conta bancária</label>
+									<select name="conta" id="conta" class="form-control">
+										<option value="#">Conta corrente do Banco do Brasil</option>
+									</select>
 								</div>
 							</div>
 						</div>
@@ -569,7 +412,7 @@
 
 	<!-- modal: editar recebimento -->
 	<div class="modal fade" id="editar-recebimento">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -578,55 +421,23 @@
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
-							<div class="col-lg-4 col-xs-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Cliente</label>
-									<input type="text" class="form-control" value="Hub Eng">
+									<label for="#">Cliente</label>
+									<p class="form-control-static">Hub Eng</p>
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-xs-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Centro de custo</label>
-									<input type="text" class="form-control" value="">
+									<label for="#">Número da parcela</label>
+									<p class="form-control-static">2 <span class="text-muted">(de 8)</span></p>
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-xs-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Observação</label>
-									<input type="text" class="form-control" value="">
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Descrição</label>
-									<input type="text" class="form-control" value="Venda 21">
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Categoria</label>
-									<select name="#" id="#" class="form-control">
-										<option value="vendas" selected="selected">Vendas</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="col-lg-4 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Conta</label>
-									<select name="#" id="#" class="form-control">
-										<option value="vendas" selected="selected">Conta corrente no Itaú</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Data da competência</label>
+									<label for="#" class="control-label">Data de vencimento</label>
 									<div class="input-group">
 										<input type="text" class="form-control" placeholder="01/01/2017" value="30/01/2017">
 										<span class="input-group-btn">
@@ -636,88 +447,24 @@
 								</div>
 							</div>
 
-							<div class="col-lg-3 col-xs-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Data vencimento</label>
+									<label for="#" class="control-label">Número da duplicata</label>
 									<div class="input-group">
-										<input type="text" class="form-control" placeholder="01/01/2017" value="10/02/2017">
+										<input type="text" class="form-control" value="1289453354">
 										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+											<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
 										</span>
 									</div>
 								</div>
 							</div>
 
-							<div class="col-lg-2 col-xs-12">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Valor</label>
-									<input type="text" class="form-control" value="R$ 8.756,14">
-								</div>
-							</div>
-
-							<div class="col-lg-12 col-xs-12" style="border-top: 1px solid #ddd">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked> Repetir
-									</label>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#">Frequência</label>
-									<select name="#" id="#" class="form-control">
-										<option value="#">Selecione uma frequência</option>
-										<option value="mensalmente" selected="selected">Mensalmente</option>
+									<label for="#">Conta bancária</label>
+									<select name="conta" id="conta" class="form-control">
+										<option value="#">Conta corrente do Banco do Brasil</option>
 									</select>
-								</div>
-							</div>
-
-							<div class="col-lg-2 col-xs-12">
-								<div class="form-group">
-									<label for="#">Ocorrências</label>
-									<input type="text" class="form-control" value="5">
-								</div>
-							</div>
-
-							<div class="col-lg-12 col-xs-12" style="border-top: 1px solid #ddd">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked> Recebido
-									</label>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Data recebimento</label>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="01/01/2017" value="30/01/2017">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#">Descontos / Taxas</label>
-									<input type="text" class="form-control" value="R$ 0,00">
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#">Juros / Multa</label>
-									<input type="text" class="form-control" value="R$ 0,00">
-								</div>
-							</div>
-
-							<div class="col-lg-3 col-xs-12">
-								<div class="form-group">
-									<label for="#">Valor recebido</label>
-									<input type="text" class="form-control" value="R$ 8.756,14">
 								</div>
 							</div>
 						</div>
@@ -741,69 +488,45 @@
 		</div>
 	</div>
 
-	<!-- modal: exportar -->
-	<div class="modal fade" id="exportar">
+	<!-- modal: remessa -->
+	<div class="modal fade" id="remessa">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Exportar contas a receber</h4>
+					<h4 class="modal-title">Gerar arquivo de remessa</h4>
 				</div>
 				<div class="modal-body">
-					<p>Exporte todos registros de contas a receber para um arquivo <strong>.xlsx</strong>.</p>
-					<p><strong>Total de registros: 10</strong></p>
-					<a href="#" class="btn btn-primary"><i class="fa fa-cloud-download"></i> Baixar arquivo</a>
+					<p>Gere um arquivo de remessa das contas a receber em aberto para enviar ao banco.</p>
 				</div>
 				<div class="modal-footer">
+					<a href="#" class="btn btn-primary"><i class="fa fa-download"></i> Gerar arquivo</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- modal: importar -->
-	<div class="modal fade" id="importar">
+	<!-- modal: retorno -->
+	<div class="modal fade" id="retorno">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Importar contas a receber</h4>
+					<h4 class="modal-title">Importar arquivo de retorno</h4>
 				</div>
 				<div class="modal-body">
-					<p>Importe os registros de contas a receber de para um arquivo <strong>.xlsx</strong>.</p>
+					<p>Importe o arquivo de retorno para dar baixas nos boletos.</p>
 					<form action="#">
 						<div class="form-group">
 							<label for="#">Selecione o arquivo</label>
 							<input type="file" name="#" id="#">
 						</div>
 					</form>
-					<a href="#" class="btn btn-primary"><i class="fa fa-cloud-upload"></i> Enviar arquivo</a>
 				</div>
 				<div class="modal-footer">
+					<a href="#" class="btn btn-primary"><i class="fa fa-upload"></i> Importar arquivo</a>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- modal: enviar e-mail -->
-	<div class="modal fade" id="enviar-email">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Enviar boleto por e-mail</h4>
-				</div>
-				<div class="modal-body">
-					<p><strong>Cliente:</strong> Ativo Casa</p>
-					<p><strong>Boleto referente à:</strong> Venda 23</p>
-					<p><strong>Valor:</strong> R$ 5.458,32</p>
-					<p><strong>Data de vencimento:</strong> 29/01/2017</p>
-					<p><strong>E-mail do cliente:</strong> contato@ativocasa.com.br</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-					<button type="button" class="btn btn-primary"><i class="fa fa-send"></i> Enviar</button>
 				</div>
 			</div>
 		</div>
@@ -820,6 +543,18 @@
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
+							<div class="col-xs-12 col-lg-6">
+								<div class="form-group">
+									<label for="#">Número da duplicata</label>
+									<p class="form-control-static">564584</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-lg-6">
+								<div class="form-group">
+									<label for="#">Cliente</label>
+									<p class="form-control-static">Mech Home</p>
+								</div>
+							</div>
 							<div class="col-lg-12">
 								<div class="checkbox">
 									<label>
@@ -828,7 +563,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Data recebimento</label>
 									<div class="input-group">
@@ -840,21 +575,14 @@
 								</div>
 							</div>
 
-							<div class="col-lg-6">
-								<div class="form-group">
-									<label for="#">Descontos / Taxas</label>
-									<input type="text" class="form-control" value="R$ 0,00">
-								</div>
-							</div>
-
-							<div class="col-lg-6">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#">Juros / Multa</label>
 									<input type="text" class="form-control" value="R$ 0,00">
 								</div>
 							</div>
 
-							<div class="col-lg-6">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#">Valor recebido</label>
 									<input type="text" class="form-control" value="R$ 8.756,14">
