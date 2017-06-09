@@ -11,7 +11,6 @@
 <body>
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -22,7 +21,6 @@
 				<a class="navbar-brand" href="#">PQ</a>
 			</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="clientes.html">Clientes</a></li>
@@ -32,25 +30,28 @@
 					<li><a href="configuracoes.html">Configurações</a></li>
 					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
 				</ul>
-			</div><!-- /.navbar-collapse -->
+			</div>
 		</div>
 	</nav>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-xs-12">
+			<div class="col-lg-5 col-xs-12">
 				<ol class="breadcrumb">
 					<li><a href="#">Painel de controle</a></li>
 					<li class="active">Contas a receber</li>
 				</ol>
 			</div>
-			<div class="col-lg-2 col-xs-12 mb-10">
-				<a href="#novo-recebimento" data-toggle="modal" class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Novo recebimento</a>
+			<div class="col-lg-3 col-xs-12 mb-10">
+				<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-primary pull-right hidden-xs">Gerar duplicatas</a>
 			</div>
 			<div class="col-lg-3 col-xs-9 mb-10">
-				<select name="#" id="#" class="form-control">
-					<option value="#">01 Jan 2017 - 31 Jan 2017</option>
-				</select>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="01/01/2017" value="01 Jan 2017 - 31 Jan 2017">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+					</span>
+				</div>
 			</div>
 			<div class="col-lg-1 col-xs-3">
 				<div class="btn-group pull-right" role="group" aria-label="...">
@@ -103,7 +104,7 @@
 											Remessa e retorno <span class="caret"></span>
 										</button>
 										<ul class="dropdown-menu">
-											<li><a href="#remessa" data-toggle="modal"><i class="fa fa-download"></i> Gerar arquivo de remessa</a></li>
+											<li><a href="gerar-remessa.html"><i class="fa fa-download"></i> Gerar arquivo de remessa</a></li>
 											<li><a href="#retorno" data-toggle="modal"><i class="fa fa-upload"></i> Importar arquivo de retorno</a></li>
 										</ul>
 									</div>
@@ -116,19 +117,27 @@
 
 							<!-- mobile -->
 							<div class="mobile-menu hidden-lg">
-								<div class="col-xs-12">
-									<div class="btn-group btn-group-justified mb-10">
-										<a href="#" class="btn btn-default">Ações <span class="caret"></span></a>
-										<a href="#" class="btn btn-default">Exibir <span class="caret"></span></a>
-									</div>
-									<div class="btn-group btn-group-justified">
-										<a href="#" class="btn btn-default">Remessa e retorno <span class="caret"></span></a>
-										<a href="#" class="btn btn-default">Imprimir</a>
+								<div class="col-xs-4">
+									<a href="#" class="btn btn-default btn-block">Relatório</a>
+								</div>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control" aria-label="Pesquisar..." placeholder="Pesquisar...">
+										<div class="input-group-btn">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#">Action</a></li>
+												<li><a href="#">Another action</a></li>
+												<li><a href="#">Something else here</a></li>
+												<li role="separator" class="divider"></li>
+												<li><a href="#">Separated link</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-xs-12 mb-10 mt-10">
+							<div class="col-lg-4 col-xs-12 mb-10 hidden-xs">
 								<div class="input-group">
 									<input type="text" class="form-control" aria-label="Pesquisar..." placeholder="Pesquisar...">
 									<div class="input-group-btn">
@@ -144,7 +153,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-12 col-xs-12">
+							<div class="col-lg-12 col-xs-12 mt-10d">
 								<div class="table-responsive">
 									<table class="table">
 										<thead>
@@ -168,7 +177,7 @@
 												<td><i class="fa fa-barcode"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
 													</div>
 												</td>
@@ -183,7 +192,7 @@
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
 													</div>
 												</td>
@@ -198,7 +207,7 @@
 												<td><i class="fa fa-barcode"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
 													</div>
 												</td>
@@ -213,7 +222,7 @@
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
 													</div>
 												</td>
@@ -228,7 +237,7 @@
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
 													</div>
 												</td>
@@ -243,7 +252,7 @@
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
 													</div>
 												</td>
@@ -258,7 +267,7 @@
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
 													</div>
 												</td>
@@ -273,7 +282,7 @@
 												<td class="text-success"><i class="fa fa-check"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-times-circle"></i></a>
 													</div>
 												</td>
@@ -288,7 +297,7 @@
 												<td><i class="fa fa-barcode"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
 													</div>
 												</td>
@@ -303,7 +312,7 @@
 												<td><i class="fa fa-barcode"></i></td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm">
-														<a href="#editar-recebimento" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
+														<a href="#editar-duplicata" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
 														<a href="#recebido" data-toggle="modal" class="btn btn-default"><i class="fa fa-check-circle"></i></a>
 													</div>
 												</td>
@@ -351,32 +360,27 @@
 		</div>
 	</div>
 
-	<!-- modal: novo recebimento -->
-	<div class="modal fade" id="novo-recebimento">
+	<!-- modal: gerar duplicatas -->
+	<div class="modal fade" id="gerar-duplicatas">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Novo recebimento</h4>
+					<h4 class="modal-title">Gerar duplicatas</h4>
 				</div>
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
 							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#" class="control-label">Número da duplicata</label>
-									<div class="input-group">
-										<input type="text" class="form-control" value="1289453354">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-										</span>
-									</div>
+									<label for="#" class="control-label">Número da nota fiscal</label>
+									<input type="text" class="form-control" value="1289453354">
 								</div>
 							</div>
 
 							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
-									<label for="#">Quantidade de parcelas</label>
+									<label for="#">Quantidade de duplicatas</label>
 									<input type="text" class="form-control" value="5">
 								</div>
 							</div>
@@ -393,30 +397,20 @@
 					</form>
 				</div>
 				<div class="modal-footer">
-					<div class="btn-group">
-					<button type="button" class="btn btn-primary">Salvar recebimento</button>
-						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<span class="caret"></span>
-							<span class="sr-only">Toggle Dropdown</span>
-						</button>
-						<ul class="dropdown-menu">
-							<li><a href="#">Adicionar e continuar adicionando</a></li>
-							<li><a href="#">Adicionar e continuar adicionando (manter campos)</a></li>
-						</ul>
-					</div>
-					<button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-primary">Gerar duplicatas</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- modal: editar recebimento -->
-	<div class="modal fade" id="editar-recebimento">
-		<div class="modal-dialog modal-sm">
+	<!-- modal: editar duplicata -->
+	<div class="modal fade" id="editar-duplicata">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Editar recebimento</h4>
+					<h4 class="modal-title">Editar duplicata</h4>
 				</div>
 				<div class="modal-body">
 					<form action="#">
@@ -428,14 +422,28 @@
 								</div>
 							</div>
 
-							<div class="col-lg-12 col-xs-12">
+							<div class="col-lg-4 col-xs-12">
+								<div class="form-group">
+									<label for="#" class="control-label">Número da nota fiscal</label>
+									<p class="form-control-static">88994457826</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-xs-12">
+								<div class="form-group">
+									<label for="#" class="control-label">Número da duplicata</label>
+									<p class="form-control-static">1289453354</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#">Número da parcela</label>
 									<p class="form-control-static">2 <span class="text-muted">(de 8)</span></p>
 								</div>
 							</div>
 
-							<div class="col-lg-12 col-xs-12">
+							<div class="col-lg-4 col-xs-12">
 								<div class="form-group">
 									<label for="#" class="control-label">Data de vencimento</label>
 									<div class="input-group">
@@ -447,19 +455,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-12 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Número da duplicata</label>
-									<div class="input-group">
-										<input type="text" class="form-control" value="1289453354">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-										</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-12 col-xs-12">
+							<div class="col-lg-8 col-xs-12">
 								<div class="form-group">
 									<label for="#">Conta bancária</label>
 									<select name="conta" id="conta" class="form-control">
@@ -471,18 +467,8 @@
 					</form>
 				</div>
 				<div class="modal-footer">
-					<div class="btn-group">
-					<button type="button" class="btn btn-primary">Salvar recebimento</button>
-						<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<span class="caret"></span>
-							<span class="sr-only">Toggle Dropdown</span>
-						</button>
-						<ul class="dropdown-menu">
-							<li><a href="#">Adicionar e continuar adicionando</a></li>
-							<li><a href="#">Adicionar e continuar adicionando (manter campos)</a></li>
-						</ul>
-					</div>
-					<button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-primary">Salvar</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
 				</div>
 			</div>
 		</div>
@@ -543,16 +529,31 @@
 				<div class="modal-body">
 					<form action="#">
 						<div class="row">
-							<div class="col-xs-12 col-lg-6">
-								<div class="form-group">
-									<label for="#">Número da duplicata</label>
-									<p class="form-control-static">564584</p>
-								</div>
-							</div>
-							<div class="col-xs-12 col-lg-6">
+							<div class="col-lg-12 col-xs-12">
 								<div class="form-group">
 									<label for="#">Cliente</label>
-									<p class="form-control-static">Mech Home</p>
+									<p class="form-control-static">Hub Eng</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-xs-12">
+								<div class="form-group">
+									<label for="#" class="control-label">Número da nota fiscal</label>
+									<p class="form-control-static">88994457826</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-xs-12">
+								<div class="form-group">
+									<label for="#" class="control-label">Número da duplicata</label>
+									<p class="form-control-static">1289453354</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-xs-12">
+								<div class="form-group">
+									<label for="#">Número da parcela</label>
+									<p class="form-control-static">2 <span class="text-muted">(de 8)</span></p>
 								</div>
 							</div>
 							<div class="col-lg-12">
@@ -592,8 +593,8 @@
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
 					<button type="button" class="btn btn-primary">Salvar</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
 				</div>
 			</div>
 		</div>
