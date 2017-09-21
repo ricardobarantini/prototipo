@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nota Fiscal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/prototipo.css">
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">PQ</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="clientes.html">Clientes</a></li>
+					<li class="active"><a href="#">Notas Fiscais</a></li>
+					<li><a href="contas-receber.html">Contas a Receber</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Configurações
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="bancos.html">Bancos</a></li>
+							<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
+							<li><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
+						</ul>
+					</li>
+					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-xs-12">
+				<ol class="breadcrumb">
+					<li><a href="#">Painel de controle</a></li>
+					<li><a href="notas-fiscais.html">Notas Fiscais</a></li>
+					<li class="active">Nota Fiscal #987654321</li>
+				</ol>
+			</div>
+			<div class="col-lg-12 col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Nota Fiscal</h3>
+					</div>
+					<div class="list-group">
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Nota Fiscal</small>
+									<div>987654321</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Cód. Cliente</small>
+									<div>1245</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Valor NF</small>
+									<div>R$ 95.256,89</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Cond. Pgto.</small>
+									<div>A5</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Data Emissão</small>
+									<div>30/06/2017</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Cliente</small>
+									<div>Jacinto Pena</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Endereço</small>
+									<div>Rua das Acácias, 123</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Bairro</small>
+									<div>Jd. Padre Bento</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">CEP</small>
+									<div>13310-000</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Cidade</small>
+									<div>Itu</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Estado</small>
+									<div>SP</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">País</small>
+									<div>Brasil</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Tipo</small>
+									<div>Pessoa Física</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">CPF/CNPJ</small>
+									<div>123.654.789-11</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">Telefone</small>
+									<div>(11) 8877-9966</div>
+								</div>
+								<div class="col-lg-3">
+									<small class="text-muted text-uppercase">E-mail</small>
+									<div>jacinto@yahoo.com</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal: gerar duplicatas -->
+	<div class="modal fade" id="gerar-duplicatas">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Gerar duplicatas</h4>
+				</div>
+				<div class="modal-body">
+					<form action="#">
+						<div class="row">
+							<div class="col-lg-12 col-xs-12">
+								<div class="form-group">
+									<label for="#" class="control-label">Número da nota fiscal</label>
+									<p class="form-control-static">334455526762</p>
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-xs-12">
+								<div class="form-group">
+									<label for="#">Condição de Pagamento</label>
+									<p class="form-control-static">3</p>
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-xs-12">
+								<div class="form-group">
+									<label for="#">Conta bancária</label>
+									<select name="conta" id="conta" class="form-control">
+										<option value="#">Conta corrente do Banco do Brasil</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Gerar duplicatas</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
