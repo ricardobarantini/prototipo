@@ -24,10 +24,21 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">Clientes</a></li>
+					<li><a href="notas-fiscais.html">Notas Fiscais</a></li>
 					<li><a href="contas-receber.html">Contas a Receber</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="configuracoes.html">Configurações</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Configurações
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="bancos.html">Bancos</a></li>
+							<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
+							<li><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
+						</ul>
+					</li>
 					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
 				</ul>
 			</div>
@@ -135,6 +146,7 @@
 												<th>Cliente</th>
 												<th>E-mail</th>
 												<th>CNPJ</th>
+												<th>Crédito</th>
 												<th>Telefone</th>
 												<th width="50px"></th>
 											</tr>
@@ -145,6 +157,7 @@
 												<td>Ativo Casa</td>
 												<td>contato@ativocasa.com.br</td>
 												<td>11.542.171/0001-69</td>
+												<td>60.000,00</td>
 												<td>(11) 4545-6965</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">
@@ -158,6 +171,7 @@
 												<td>Bastidores Home</td>
 												<td>atendimento@bastidoreshome.com</td>
 												<td>61.142.745/0001-80</td>
+												<td>35.000,00</td>
 												<td>(19) 4566-1112</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">
@@ -171,6 +185,7 @@
 												<td>Hub Eng</td>
 												<td>atendimento@hubeng.com</td>
 												<td>78.887.674/0001-47</td>
+												<td>25.600,00</td>
 												<td>(11) 4122-0025</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">
@@ -184,6 +199,7 @@
 												<td>Mech Home</td>
 												<td>compras@mechhome.com.br</td>
 												<td>69.529.372/0001-06</td>
+												<td>50.000,00</td>
 												<td>(11) 2255-7886</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">
@@ -197,6 +213,7 @@
 												<td>Ébano Car</td>
 												<td>compras@ebanocar.com.br</td>
 												<td>75.812.667/0001-98</td>
+												<td>10.200,00</td>
 												<td>(11) 5566-2895</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">
@@ -210,6 +227,7 @@
 												<td>Constru Home</td>
 												<td>contato@construhome.com</td>
 												<td>18.467.756/0001-00</td>
+												<td>4.000,00</td>
 												<td>(11) 7025-4565</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">
@@ -223,6 +241,7 @@
 												<td>Mega Engenharia</td>
 												<td>atendimento@megaengenharia.com.br</td>
 												<td>38.153.221/0001-72</td>
+												<td>26.000,00</td>
 												<td>(15) 4026-5647</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">
@@ -236,6 +255,7 @@
 												<td>Ébano Car</td>
 												<td>compras@prismacar.com.br</td>
 												<td>35.643.113/0001-90</td>
+												<td>15.000,00</td>
 												<td>(11) 1025-7855</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">
@@ -249,6 +269,7 @@
 												<td>Ébano Car</td>
 												<td>compras@shakehome.com.br</td>
 												<td>76.353.354/0001-81</td>
+												<td>50.000,00</td>
 												<td>(11) 4022-7888</td>
 												<td class="hidden-xs">
 													<div class="btn-group btn-group-sm pull-right">

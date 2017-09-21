@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Configurações</title>
+	<title>Contas Bancárias</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -24,10 +24,21 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="clientes.html">Clientes</a></li>
+					<li><a href="notas-fiscais.html">Notas Fiscais</a></li>
 					<li><a href="contas-receber.html">Contas a Receber</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Configurações</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Configurações
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="bancos.html">Bancos</a></li>
+							<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
+							<li><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
+						</ul>
+					</li>
 					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
 				</ul>
 			</div>
@@ -39,7 +50,8 @@
 			<div class="col-lg-6 col-xs-12">
 				<ol class="breadcrumb">
 					<li><a href="#">Painel de controle</a></li>
-					<li class="active">Configurações</li>
+					<li>Configurações</li>
+					<li class="active">Contas Bancárias</li>
 				</ol>
 			</div>
 			<div class="col-lg-2 col-lg-offset-4 col-xs-12 col-xs-offset-0 mb-10">

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Notas Fiscais</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/prototipo.css">
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">PQ</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="clientes.html">Clientes</a></li>
+					<li class="active"><a href="#">Notas Fiscais</a></li>
+					<li><a href="contas-receber.html">Contas a Receber</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Configurações
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="bancos.html">Bancos</a></li>
+							<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
+							<li><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
+						</ul>
+					</li>
+					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-xs-12">
+				<ol class="breadcrumb">
+					<li><a href="#">Painel de controle</a></li>
+					<li class="active">Notas Fiscais</li>
+				</ol>
+			</div>
+			<div class="col-lg-3 col-lg-offset-3 col-xs-9 mb-10">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="01/01/2017" value="01 Jan 2017 - 31 Jan 2017">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+					</span>
+				</div>
+			</div>
+			<div class="col-lg-1 col-xs-3">
+				<div class="btn-group pull-right" role="group" aria-label="...">
+					<button type="button" class="btn btn-default"><i class="fa fa-caret-left"></i></button>
+					<button type="button" class="btn btn-default"><i class="fa fa-caret-right"></i></button>
+				</div>
+			</div>
+			<div class="col-lg-12 col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Notas fiscais</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<!-- mobile -->
+							<div class="mobile-menu hidden-lg">
+								<div class="col-xs-4">
+									<a href="#" class="btn btn-default btn-block">Relatório</a>
+								</div>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control" aria-label="Pesquisar..." placeholder="Pesquisar...">
+										<div class="input-group-btn">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#">Action</a></li>
+												<li><a href="#">Another action</a></li>
+												<li><a href="#">Something else here</a></li>
+												<li role="separator" class="divider"></li>
+												<li><a href="#">Separated link</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-lg-offset-8 col-xs-12 mb-10 hidden-xs">
+								<div class="input-group">
+									<input type="text" class="form-control" aria-label="Pesquisar..." placeholder="Pesquisar...">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-xs-12 mt-10d">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th><input type="checkbox" name="#" id="#"></th>
+												<th>Código da NF</th>
+												<th>Código do Cliente</th>
+												<th>Valor da NF</th>
+												<th>Data de Emissão</th>
+												<th>Cond. de Pag.</th>
+												<th width="100px"></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>334455526762</td>
+												<td>4</td>
+												<td>7.444,22</td>
+												<td>29/01/2017</td>
+												<td>3</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>332255526683</td>
+												<td>2</td>
+												<td>18.009,87</td>
+												<td>27/01/2017</td>
+												<td>4</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>566452226742</td>
+												<td>9</td>
+												<td>9.889,34</td>
+												<td>27/01/2017</td>
+												<td>1</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>776446722622</td>
+												<td>13</td>
+												<td>11.866,34</td>
+												<td>25/01/2017</td>
+												<td>3</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>986226722722</td>
+												<td>10</td>
+												<td>5.345,10</td>
+												<td>22/01/2017</td>
+												<td>4</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>866255721022</td>
+												<td>8</td>
+												<td>35.500,22</td>
+												<td>20/01/2017</td>
+												<td>4</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>986335728067</td>
+												<td>7</td>
+												<td>10.346,92</td>
+												<td>19/01/2017</td>
+												<td>5</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>457295725967</td>
+												<td>5</td>
+												<td>56.338,62</td>
+												<td>18/01/2017</td>
+												<td>7</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>473299225237</td>
+												<td>6</td>
+												<td>3.760,83</td>
+												<td>15/01/2017</td>
+												<td>9</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+
+											<tr>
+												<td><input type="checkbox" name="#" id="#"></td>
+												<td>422293625927</td>
+												<td>4</td>
+												<td>7.229,05</td>
+												<td>13/01/2017</td>
+												<td>5</td>
+												<td class="hidden-xs">
+													<div class="btn-group btn-group-sm">
+														<a href="#gerar-duplicatas" data-toggle="modal" class="btn btn-default"><i class="fa fa-file-text-o"></i> Gerar duplicatas</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal: gerar duplicatas -->
+	<div class="modal fade" id="gerar-duplicatas">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Gerar duplicatas</h4>
+				</div>
+				<div class="modal-body">
+					<form action="#">
+						<div class="row">
+							<div class="col-lg-12 col-xs-12">
+								<div class="form-group">
+									<label for="#" class="control-label">Número da nota fiscal</label>
+									<p class="form-control-static">334455526762</p>
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-xs-12">
+								<div class="form-group">
+									<label for="#">Condição de Pagamento</label>
+									<p class="form-control-static">3</p>
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-xs-12">
+								<div class="form-group">
+									<label for="#">Conta bancária</label>
+									<select name="conta" id="conta" class="form-control">
+										<option value="#">Conta corrente do Banco do Brasil</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Gerar duplicatas</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
