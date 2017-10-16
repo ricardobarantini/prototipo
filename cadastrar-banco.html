@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bancos</title>
+	<title>Cadastrar Banco</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -50,57 +50,31 @@
 			<div class="col-lg-6 col-xs-12">
 				<ol class="breadcrumb">
 					<li><a href="#">Painel de controle</a></li>
-					<li>Configurações</li>
-					<li class="active">Bancos</li>
+					<li><a href="#">Configurações</a></li>
+					<li><a href="bancos.html">Bancos</a></li>
+					<li class="active">Cadastrar Banco</li>
 				</ol>
-			</div>
-			<div class="col-lg-2 col-lg-offset-4 col-xs-12 col-xs-offset-0 mb-10">
-				<a href="cadastrar-banco.html" class="btn btn-primary btn-block">Novo Banco</a>
 			</div>
 			<div class="col-lg-12 col-xs-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Bancos</h3>
+						<h3 class="panel-title">Cadastrar Banco</h3>
 					</div>
 					<div class="panel-body">
-						<div class="row">
-							<div class="col-lg-12 col-xs-12 mt-10">
-								<div class="table-responsive">
-									<table class="table">
-										<thead>
-											<tr>
-												<th class="col-md-1">Cód.</th>
-												<th>Nome do Banco</th>
-												<th></th>
-											</tr>
-										</thead>
-
-										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Caixa Econômica Federal</td>
-												<td class="text-right hidden-xs">
-													<div class="btn-group btn-group-sm">
-														<a href="editar-banco.html" class="btn btn-default"><i class="fa fa-edit"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Banco do Brasil</td>
-												<td class="text-right hidden-xs">
-													<div class="btn-group btn-group-sm">
-														<a href="editar-banco.html" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+						<form action="#">
+							<div class="row">
+								<div class="col-lg-4 col-xs-12">
+									<div class="form-group">
+										<label for="#" class="control-label">Banco</label>
+										<input type="text" name="banco" id="banco" class="form-control" value="Banco do Brasil">
+									</div>
 								</div>
 							</div>
-						</div>
+						</form>
+					</div>
+					<div class="panel-footer">
+						<button type="button" class="btn btn-primary">Salvar Banco</button>
+						<a href="bancos.html" class="btn btn-default">Cancelar</a>
 					</div>
 				</div>
 			</div>
