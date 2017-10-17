@@ -26,19 +26,11 @@
 					<li><a href="clientes.html">Clientes</a></li>
 					<li><a href="notas-fiscais.html">Notas Fiscais</a></li>
 					<li><a href="contas-receber.html">Contas a Receber</a></li>
+					<li><a href="bancos.html">Bancos</a></li>
+					<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
+					<li class="active"><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-							Configurações
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="bancos.html">Bancos</a></li>
-							<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
-							<li><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
-						</ul>
-					</li>
 					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
 				</ul>
 			</div>
@@ -50,12 +42,11 @@
 			<div class="col-lg-6 col-xs-12">
 				<ol class="breadcrumb">
 					<li><a href="#">Painel de controle</a></li>
-					<li>Configurações</li>
 					<li class="active">Condições de Pagamento</li>
 				</ol>
 			</div>
 			<div class="col-lg-2 col-lg-offset-4 col-xs-12 col-xs-offset-0 mb-10">
-				<a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#nova-condicao">Nova Condição</a>
+				<a href="cadastrar-condicao-pagamento.html" class="btn btn-primary btn-block">Nova Condição</a>
 			</div>
 			<div class="col-lg-12 col-xs-12">
 				<div class="panel panel-default">
@@ -69,9 +60,9 @@
 									<table class="table">
 										<thead>
 											<tr>
-												<th class="col-md-1">Cód.</th>
-												<th>Quantidade de Parcelas</th>
-												<th>Entrada</th>
+												<th class="col-xs-1">Cód.</th>
+												<th class="col-xs-2">Quantidade de Parcelas</th>
+												<th class="col-xs-2">Entrada</th>
 												<th></th>
 											</tr>
 										</thead>
@@ -82,9 +73,9 @@
 												<td>2</td>
 												<td>Sim</td>
 												<td class="text-right hidden-xs">
-													<div class="btn-group btn-group-sm">
-														<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													<div class="btn-group btn-group-xs">
+														<a href="editar-condicao-pagamento.html" class="btn btn-default"><i class="fa fa-edit"></i> Editar</a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i> Remover</a>
 													</div>
 												</td>
 											</tr>
@@ -93,9 +84,9 @@
 												<td>3</td>
 												<td>Sim</td>
 												<td class="text-right hidden-xs">
-													<div class="btn-group btn-group-sm">
-														<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													<div class="btn-group btn-group-xs">
+														<a href="editar-condicao-pagamento.html" class="btn btn-default"><i class="fa fa-edit"></i> Editar</a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i> Remover</a>
 													</div>
 												</td>
 											</tr>
@@ -104,9 +95,9 @@
 												<td>4</td>
 												<td>Sim</td>
 												<td class="text-right hidden-xs">
-													<div class="btn-group btn-group-sm">
-														<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													<div class="btn-group btn-group-xs">
+														<a href="editar-condicao-pagamento.html" class="btn btn-default"><i class="fa fa-edit"></i> Editar</a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i> Remover</a>
 													</div>
 												</td>
 											</tr>
@@ -115,9 +106,9 @@
 												<td>5</td>
 												<td>Sim</td>
 												<td class="text-right hidden-xs">
-													<div class="btn-group btn-group-sm">
-														<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													<div class="btn-group btn-group-xs">
+														<a href="editar-condicao-pagamento.html" class="btn btn-default"><i class="fa fa-edit"></i> Editar</a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i> Remover</a>
 													</div>
 												</td>
 											</tr>
@@ -126,9 +117,9 @@
 												<td>4</td>
 												<td>Não</td>
 												<td class="text-right hidden-xs">
-													<div class="btn-group btn-group-sm">
-														<a href="#editar-conta" data-toggle="modal" class="btn btn-default"><i class="fa fa-edit"></i></a>
-														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i></a>
+													<div class="btn-group btn-group-xs">
+														<a href="editar-condicao-pagamento.html" class="btn btn-default"><i class="fa fa-edit"></i> Editar</a>
+														<a href="#" class="btn btn-default"><i class="fa fa-trash-o"></i> Remover</a>
 													</div>
 												</td>
 											</tr>
@@ -143,58 +134,7 @@
 		</div>
 	</div>
 
-	<!-- modal: cadastro de condição de pagamento -->
-	<div class="modal fade" id="nova-condicao">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Nova Condição de Pagamento</h4>
-				</div>
-				<div class="modal-body">
-					<form action="#">
-						<div class="row">
-							<div class="col-lg-12 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Descrição</label>
-									<input type="text" name="descricao" id="descricao" class="form-control" value="Condição com entrada e 4 parcelas">
-								</div>
-
-								<div class="form-group">
-									<label for="#" class="control-label">Parcelas</label>
-									<input type="text" name="parcelas" id="parcelas" class="form-control" value="4">
-								</div>
-
-								<div class="form-group">
-									<label for="#" class="control-label">Possui entrada?</label>
-									<select name="entrada" id="entrada" class="form-control">
-										<option value="sim" selected="selected">Sim</option>
-										<option value="não">Não</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Salvar Condição</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- modal: editar banco (fazer) -->
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('#tabs a').click(function (e) {
-				e.preventDefault()
-				$(this).tab('show')
-			});
-		});
-	</script>
 </body>
 </html>

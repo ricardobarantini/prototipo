@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastrar Condição de Pagamento</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/prototipo.css">
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">PQ</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="clientes.html">Clientes</a></li>
+					<li><a href="notas-fiscais.html">Notas Fiscais</a></li>
+					<li><a href="contas-receber.html">Contas a Receber</a></li>
+					<li><a href="bancos.html">Bancos</a></li>
+					<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
+					<li class="active"><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-xs-12">
+				<ol class="breadcrumb">
+					<li><a href="#">Painel de controle</a></li>
+					<li><a href="#">Condições de Pagamento</a></li>
+					<li class="active">Cadastrar Condição de Pagamento</li>
+				</ol>
+			</div>
+			<div class="col-lg-12 col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Cadastrar Condição de Pagamento</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-4">
+								<form action="#">
+									<div class="row">
+										<div class="col-lg-12 col-xs-12">
+											<div class="form-group">
+												<label for="#" class="control-label">Descrição</label>
+												<input type="text" name="descricao" id="descricao" class="form-control" value="Condição com entrada e 4 parcelas">
+											</div>
+
+											<div class="form-group">
+												<label for="#" class="control-label">Parcelas</label>
+												<input type="text" name="parcelas" id="parcelas" class="form-control" value="4">
+											</div>
+
+											<div class="form-group">
+												<label for="#" class="control-label">Possui entrada?</label>
+												<select name="entrada" id="entrada" class="form-control">
+													<option value="sim" selected="selected">Sim</option>
+													<option value="não">Não</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<button type="button" class="btn btn-primary">Salvar</button>
+						<a href="condicoes-pagamento.html" class="btn btn-default">Fechar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
