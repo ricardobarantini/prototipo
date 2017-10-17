@@ -24,21 +24,13 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="clientes.html">Clientes</a></li>
-					<li><a href="#">Notas Fiscais</a></li>
+					<li><a href="notas-fiscais.html">Notas Fiscais</a></li>
 					<li class="active"><a href="contas-receber.html">Contas a Receber</a></li>
+					<li><a href="bancos.html">Bancos</a></li>
+					<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
+					<li><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-							Configurações
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="bancos.html">Bancos</a></li>
-							<li><a href="contas-bancarias.html">Contas Bancárias</a></li>
-							<li><a href="condicoes-pagamento.html">Condições de Pagamento</a></li>
-						</ul>
-					</li>
 					<li><a href="login.html"><i class="fa fa-sign-out"></i> Sair</a></li>
 				</ul>
 			</div>
@@ -47,144 +39,126 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-5 col-xs-12">
-				<ol class="breadcrumb">
-					<li><a href="#">Painel de controle</a></li>
-					<li><a href="contas-receber.html">Contas a Receber</a></li>
-					<li class="active">Retorno</li>
-				</ol>
-			</div>
 			<div class="col-lg-12 col-xs-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Retorno</h3>
 					</div>
-					<div class="list-group">
-						<div class="list-group-item">
-							<div class="row">
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Cód. Remessa</small>
-									<div>1</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Nota Fiscal</small>
-									<div>987654321</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Cód. Cliente</small>
-									<div>1245</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Cód. Duplicata</small>
-									<div>445578</div>
-								</div>
-							</div>
-						</div>
-						<div class="list-group-item">
-							<div class="row">
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Valor Duplicata</small>
-									<div>R$ 19.051,38</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Data de Vencimento</small>
-									<div>10/07/2017</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Data Emissão</small>
-									<div>10/06/2017</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Tipo Serviço</small>
-									<div>88</div>
-								</div>
-							</div>
-						</div>
-						<div class="list-group-item">
-							<div class="row">
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Núm. Conta</small>
-									<div>123-22</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Agência</small>
-									<div>966</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Cód. Moeda</small>
-									<div>9</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Ocorrência</small>
-									<div>0</div>
-								</div>
-							</div>
-						</div>
-						<div class="list-group-item">
-							<div class="row">
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Data de Pagamento</small>
-									<div>10/07/2017</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Valor Pago</small>
-									<div>R$ 19.051,38</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Juros</small>
-									<div>R$ 0</div>
-								</div>
-								<div class="col-lg-3">
-									<small class="text-muted text-uppercase">Multa</small>
-									<div>R$ 0</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12 col-xs-12 mt-10d">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>NF/Série</th>
+												<th>Cliente</th>
+												<th>Data de pagamento</th>
+												<th>Valor recebido</th>
+												<th>Multa</th>
+												<th>Juros</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>564595/05</td>
+												<td>29/01/2017</td>
+												<td>Ativo Casa</td>
+												<td>5.458,32</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564592/06</td>
+												<td>27/01/2017</td>
+												<td>Bastidores Home</td>
+												<td>7.861,19</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564588/10</td>
+												<td>26/01/2017</td>
+												<td>Hub Eng</td>
+												<td>9.438,15</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564584/14</td>
+												<td>24/01/2017</td>
+												<td>Mech Home</td>
+												<td>4.566,19</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564575/07</td>
+												<td>24/01/2017</td>
+												<td>Ébano Car</td>
+												<td>5.660,13</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564571/07</td>
+												<td>18/01/2017</td>
+												<td>Constru Home</td>
+												<td>7.744,11</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564564/19</td>
+												<td>10/01/2017</td>
+												<td>Mega Engenharia</td>
+												<td>10.711,00</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564561/21</td>
+												<td>05/01/2017</td>
+												<td>Ativo Casa</td>
+												<td>2.445,99</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564559/03</td>
+												<td>28/12/2016</td>
+												<td>Prisma Car</td>
+												<td>2.365,25</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+
+											<tr>
+												<td>564557/01</td>
+												<td>20/12/2016</td>
+												<td>Shake Home</td>
+												<td>7.856,14</td>
+												<td>R$ 0,00</td>
+												<td>R$ 0,00</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- modal: gerar duplicatas -->
-	<div class="modal fade" id="gerar-duplicatas">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Gerar duplicatas</h4>
-				</div>
-				<div class="modal-body">
-					<form action="#">
-						<div class="row">
-							<div class="col-lg-12 col-xs-12">
-								<div class="form-group">
-									<label for="#" class="control-label">Número da nota fiscal</label>
-									<p class="form-control-static">334455526762</p>
-								</div>
-							</div>
-
-							<div class="col-lg-12 col-xs-12">
-								<div class="form-group">
-									<label for="#">Condição de Pagamento</label>
-									<p class="form-control-static">3</p>
-								</div>
-							</div>
-
-							<div class="col-lg-12 col-xs-12">
-								<div class="form-group">
-									<label for="#">Conta bancária</label>
-									<select name="conta" id="conta" class="form-control">
-										<option value="#">Conta corrente do Banco do Brasil</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Gerar duplicatas</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+					<div class="panel-footer">
+						<a href="#" class="btn btn-primary">Dar Baixa</a>
+						<a href="#" class="btn btn-default">Cancelar</a>
+					</div>
 				</div>
 			</div>
 		</div>
