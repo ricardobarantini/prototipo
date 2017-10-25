@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conversão de Dados</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/prototipo.css">
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="conversao-geral.html">Conversão de Dados</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="conversao-notas.html">Notas Fiscais</a></li>
+					<li><a href="conversao-duplicatas.html">Contas a Receber</a></li>
+					<li><a href="conversao-bancos.html">Bancos</a></li>
+					<li><a href="conversao-contas.html">Contas Bancárias</a></li>
+					<li><a href="conversao-condicoes.html">Condições de Pagamento</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Conversão de Notas Fiscais</h3>
+					</div>
+					<div class="panel-body">
+						<form action="#">
+							<div class="form-group">
+								<div class="form-group">
+									<label for="#">Arquivo para conversão</label>
+									<input type="file" name="arquivo" id="arquivo" value="">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="panel-footer">
+						<a href="form-conversao-notas.html" class="btn btn-primary">Converter</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
