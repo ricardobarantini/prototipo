@@ -15,8 +15,8 @@
 - ~~Descrição de métodos: funcionários (SalvarFuncionario, AtualizarFuncionario, RemoverFuncionario, ObterFuncionario)~~
 
 ## Parte 8
-- Telas: atualizar o print de todas as outras telas
-- Telas: cadastro, consulta e alteração de agências e funcionários
+- ~~Telas: atualizar o print de todas as outras telas~~
+- ~~Telas: cadastro, consulta e alteração de agências e funcionários~~
 
 ## Parte 9
 - Item 2.1: incluir a classe, layout de tabela e métodos de cliente
