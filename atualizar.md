@@ -8,7 +8,7 @@
 ## Parte 5
 - ~~Layout de tabela: funcionários~~
 - ~~DER: funcionários~~
-- SQL: funcionários (monta o SQL e me manda para eu tirar o print no mesmo formato que está o atual)
+- ~~SQL: funcionários (monta o SQL e me manda para eu tirar o print no mesmo formato que está o atual)~~
 
 ## Parte 6
 - ~~Diagrama de classe: funcionários, incluir o campo "crédito" na tabela de clientes (atualizar o print dessa classe na parte 9)~~
