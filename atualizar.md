@@ -19,8 +19,8 @@
 - ~~Telas: cadastro, consulta e alteração de agências e funcionários~~
 
 ## Parte 9
-- Item 2.1: incluir a classe, layout de tabela e métodos de cliente
+- ~~Item 2.1: incluir a classe, layout de tabela e métodos de cliente~~
 - Item 6 (consulta de notas fiscais): atualizar o print do layout do protótipo
 
 ## Parte 13
-- Atualizar todas telas
+- ~~Atualizar todas telas~~
