@@ -11,8 +11,8 @@
 - SQL: funcionários (monta o SQL e me manda para eu tirar o print no mesmo formato que está o atual)
 
 ## Parte 6
-- Diagrama de classe: funcionários, incluir o campo "crédito" na tabela de clientes (atualizar o print dessa classe na parte 9)
-- Descrição de métodos: funcionários (SalvarFuncionario, AtualizarFuncionario, RemoverFuncionario, ObterFuncionario)
+- ~~Diagrama de classe: funcionários, incluir o campo "crédito" na tabela de clientes (atualizar o print dessa classe na parte 9)~~
+- ~~Descrição de métodos: funcionários (SalvarFuncionario, AtualizarFuncionario, RemoverFuncionario, ObterFuncionario)~~
 
 ## Parte 8
 - Telas: atualizar o print de todas as outras telas
