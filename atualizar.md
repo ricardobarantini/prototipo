@@ -6,8 +6,8 @@
 - ~~Lista de dados: incluir o print de tela (apenas de telas) atualizados~~
 
 ## Parte 5
-- Layout de tabela: funcionários
-- DER: funcionários
+- ~~Layout de tabela: funcionários~~
+- ~~DER: funcionários~~
 - SQL: funcionários (monta o SQL e me manda para eu tirar o print no mesmo formato que está o atual)
 
 ## Parte 6
