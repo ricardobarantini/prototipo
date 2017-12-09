@@ -10,9 +10,9 @@ Correções para fazer no trabalho após a última apresentação.
 
 4. ~~Criar tabela de parcelas com o código do banco~~ - Murilo
 
-5. Data de emissão da nota fiscal está errado no teste
+5. ~~Data de emissão da nota fiscal está errado no teste~~ - Ricardo
 
-6. Conferir se dados das notas fiscais batem de acordo com as duplicatas geradas (principalmente se a condição de pagamento possui entrada ou não para que as duplicatas obedeçam os dias de vencimento)
+6. ~~Conferir se dados das notas fiscais batem de acordo com as duplicatas geradas (principalmente se a condição de pagamento possui entrada ou não para que as duplicatas obedeçam os dias de vencimento)~~ - Ricardo
 
 7. Descrição da tela de "gerar remessa" está com a antiga, precisa atualizar para o layout novo
 
@@ -44,4 +44,4 @@ Correções para fazer no trabalho após a última apresentação.
 
 21. Incluir a tabela "parcelas" no SQL formatado no padrão atual
 
-22. Corrigir toda massa de teste que possui "duplicatas" para incluir "parcelas" caso necessário
+22. ~~Corrigir toda massa de teste que possui "duplicatas" para incluir "parcelas" caso necessário~~ - Ricardo e João
