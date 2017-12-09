@@ -38,9 +38,9 @@ Correções para fazer no trabalho após a última apresentação.
 
 18. Valores do relatório tem que bater com a massa de teste e remover o campo "data de pagamento" e "valor pago"
 
-19. Incluir a tabela "parcelas" na forma normal 3 na parte 5
+19. ~~Incluir a tabela "parcelas" na forma normal 3 na parte 5~~ - Murilo
 
-20. Incluir a tabela "parcelas" no DER
+20. ~~Incluir a tabela "parcelas" no DER~~ - João
 
 21. Incluir a tabela "parcelas" no SQL formatado no padrão atual
 
