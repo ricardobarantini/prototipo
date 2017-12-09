@@ -18,7 +18,7 @@ Correções para fazer no trabalho após a última apresentação.
 
 8. Descrever a geração de remessa de forma mais completa (exemplo no final do arquivo)
 
-9. Alterar o nome do arquivo da parte 13 para "teste de integração"
+9. ~~Alterar o nome do arquivo da parte 13 para "teste de integração"~~
 
 10. Incluir o teste de geração de remessa na parte 13
 
@@ -43,3 +43,5 @@ Correções para fazer no trabalho após a última apresentação.
 20. Incluir a tabela "parcelas" no DER
 
 21. Incluir a tabela "parcelas" no SQL formatado no padrão atual
+
+22. Corrigir a massa de teste "dar baixa em duplicata" para fazer uso da tabela de parcelas
