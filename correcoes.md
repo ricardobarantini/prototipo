@@ -2,13 +2,13 @@
 
 Correções para fazer no trabalho após a última apresentação.
 
-1. Classe "parcela" em "gerar duplicatas" (procurar todas referências no trabalho todo)
+1. ~~Classe "parcela" em "gerar duplicatas" (procurar todas referências no trabalho todo)~~ - Ricardo
 
-2. Layout de tabela "duplicata" e "parcela" no "gerar duplicatas"
+2. ~~Layout de tabela "duplicata" e "parcela" no "gerar duplicatas"~~ - Ricardo
 
 3. Trocar "dup_n" para "dup_codigo" em todas tabelas que aparecem
 
-4. Criar tabela de parcelas com o código do banco
+4. ~~Criar tabela de parcelas com o código do banco~~ - Murilo
 
 5. Data de emissão da nota fiscal está errado no teste
 
@@ -18,7 +18,7 @@ Correções para fazer no trabalho após a última apresentação.
 
 8. Descrever a geração de remessa de forma mais completa (exemplo no final do arquivo)
 
-9. ~~Alterar o nome do arquivo da parte 13 para "teste de integração"~~
+9. ~~Alterar o nome do arquivo da parte 13 para "teste de integração"~~ - Ricardo
 
 10. Incluir o teste de geração de remessa na parte 13
 
@@ -44,4 +44,4 @@ Correções para fazer no trabalho após a última apresentação.
 
 21. Incluir a tabela "parcelas" no SQL formatado no padrão atual
 
-22. Corrigir a massa de teste "dar baixa em duplicata" para fazer uso da tabela de parcelas
+22. Corrigir toda massa de teste que possui "duplicatas" para incluir "parcelas" caso necessário
