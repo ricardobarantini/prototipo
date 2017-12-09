@@ -41,3 +41,5 @@ Correções para fazer no trabalho após a última apresentação.
 19. Incluir a tabela "parcelas" na forma normal 3 na parte 5
 
 20. Incluir a tabela "parcelas" no DER
+
+21. Incluir a tabela "parcelas" no SQL formatado no padrão atual
