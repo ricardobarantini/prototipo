@@ -37,3 +37,7 @@ Correções para fazer no trabalho após a última apresentação.
 17. Adicionar a tabela de "nota fiscal" no layout de tabelas do relatório
 
 18. Valores do relatório tem que bater com a massa de teste e remover o campo "data de pagamento" e "valor pago"
+
+19. Incluir a tabela "parcelas" na forma normal 3 na parte 5
+
+20. Incluir a tabela "parcelas" no DER
