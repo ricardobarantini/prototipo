@@ -26,11 +26,11 @@ Correções para fazer no trabalho após a última apresentação.
 
 12. ~~Remover o cliente 4 nos testes da parte 9 (conferir se ele não é usado em nenhum outro teste)~~ - Ricardo
 
-13. Arquivo "remessa" deve ser exibido nos testes (antes e depois)
+13. ~~Arquivo "remessa" deve ser exibido nos testes (antes e depois)~~ - Ricardo
 
 14. Arquivo de "retorno" só usa parcela, cliente e retorno
 
-15. Arquivo de "retorno" deve ser criado exibindo o valor da parcela paga e a data em que foi paga (além dos outros campos que também possuem na remessa)
+15. ~~Arquivo de "retorno" deve ser criado exibindo o valor da parcela paga e a data em que foi paga (além dos outros campos que também possuem na remessa)~~ - Ricardo
 
 16. Colocar um indicador na tela de relatório (print) dizendo qual coluna pertence a qual atributo e de que classe vem (descrever tudo isso no texto do evento)
 
