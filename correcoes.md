@@ -14,9 +14,9 @@ Correções para fazer no trabalho após a última apresentação.
 
 6. ~~Conferir se dados das notas fiscais batem de acordo com as duplicatas geradas (principalmente se a condição de pagamento possui entrada ou não para que as duplicatas obedeçam os dias de vencimento)~~ - Ricardo
 
-7. Descrição da tela de "gerar remessa" está com a antiga, precisa atualizar para o layout novo
+7. ~~Descrição da tela de "gerar remessa" está com a antiga, precisa atualizar para o layout novo~~ - Fernando
 
-8. Descrever a geração de remessa de forma mais completa (exemplo no final do arquivo)
+8. ~~Descrever a geração de remessa de forma mais completa (exemplo no final do arquivo)~~ - Fernando
 
 9. ~~Alterar o nome do arquivo da parte 13 para "teste de integração"~~ - Ricardo
 
@@ -42,7 +42,7 @@ Correções para fazer no trabalho após a última apresentação.
 
 20. ~~Incluir a tabela "parcelas" no DER~~ - João
 
-21. Incluir a tabela "parcelas" no SQL formatado no padrão atual
+21. ~~Incluir a tabela "parcelas" no SQL formatado no padrão atual~~ - Murilo
 
 22. ~~Corrigir toda massa de teste que possui "duplicatas" para incluir "parcelas" caso necessário~~ - Ricardo e João
 
