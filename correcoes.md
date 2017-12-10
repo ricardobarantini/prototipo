@@ -20,7 +20,7 @@ Correções para fazer no trabalho após a última apresentação.
 
 9. ~~Alterar o nome do arquivo da parte 13 para "teste de integração"~~ - Ricardo
 
-10. Incluir o teste de geração de remessa na parte 13
+10. ~~Incluir o teste de geração de remessa na parte 13~~ - Fernando
 
 11. ~~Tabelas utilizadas no "gerar remessa" devem ser incluídas na parte 9~~ - Ricardo
 
@@ -46,7 +46,7 @@ Correções para fazer no trabalho após a última apresentação.
 
 22. ~~Corrigir toda massa de teste que possui "duplicatas" para incluir "parcelas" caso necessário~~ - Ricardo e João
 
-23. Atualizar arquivo  13 com as tabelas atualizadas da parte 11
+23. ~~Atualizar arquivo  13 com as tabelas atualizadas da parte 11~~ - Fernando
 
 24. ~~Atualizar os arquivos com o print da tela atualizada de retorno~~ - Murilo
 
