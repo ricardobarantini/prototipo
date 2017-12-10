@@ -46,6 +46,8 @@ Correções para fazer no trabalho após a última apresentação.
 
 22. ~~Corrigir toda massa de teste que possui "duplicatas" para incluir "parcelas" caso necessário~~ - Ricardo e João
 
-23. Atualizar arquivo para com as tabelas atualizadas da parte 11
+23. Atualizar arquivo  13 com as tabelas atualizadas da parte 11
 
-24. Atualizar os arquivos com o print da tela atualizada de retorno
+24. ~~Atualizar os arquivos com o print da tela atualizada de retorno~~ - Murilo
+
+25. ~~Incluir telas que faltam no arquivo 8~~ - Murilo
