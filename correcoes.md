@@ -6,7 +6,7 @@ Correções para fazer no trabalho após a última apresentação.
 
 2. ~~Layout de tabela "duplicata" e "parcela" no "gerar duplicatas"~~ - Ricardo
 
-3. Trocar "dup_n" para "dup_codigo" em todas tabelas que aparecem
+3. ~~Trocar "dup_n" para "dup_codigo" em todas tabelas que aparecem~~ - Ricardo
 
 4. ~~Criar tabela de parcelas com o código do banco~~ - Murilo
 
@@ -45,3 +45,7 @@ Correções para fazer no trabalho após a última apresentação.
 21. Incluir a tabela "parcelas" no SQL formatado no padrão atual
 
 22. ~~Corrigir toda massa de teste que possui "duplicatas" para incluir "parcelas" caso necessário~~ - Ricardo e João
+
+23. Atualizar arquivo para com as tabelas atualizadas da parte 11
+
+24. Atualizar os arquivos com o print da tela atualizada de retorno
