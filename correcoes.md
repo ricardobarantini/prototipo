@@ -24,7 +24,7 @@ Correções para fazer no trabalho após a última apresentação.
 
 11. ~~Tabelas utilizadas no "gerar remessa" devem ser incluídas na parte 9~~ - Ricardo
 
-12. Remover o cliente 4 nos testes da parte 9 (conferir se ele não é usado em nenhum outro teste)
+12. ~~Remover o cliente 4 nos testes da parte 9 (conferir se ele não é usado em nenhum outro teste)~~ - Ricardo
 
 13. Arquivo "remessa" deve ser exibido nos testes (antes e depois)
 
