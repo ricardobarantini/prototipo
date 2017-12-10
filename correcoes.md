@@ -28,13 +28,13 @@ Correções para fazer no trabalho após a última apresentação.
 
 13. ~~Arquivo "remessa" deve ser exibido nos testes (antes e depois)~~ - Ricardo
 
-14. Arquivo de "retorno" só usa parcela, cliente e retorno
+14. ~~Arquivo de "retorno" só usa parcela, cliente e retorno~~ - Ricardo
 
 15. ~~Arquivo de "retorno" deve ser criado exibindo o valor da parcela paga e a data em que foi paga (além dos outros campos que também possuem na remessa)~~ - Ricardo
 
 16. Colocar um indicador na tela de relatório (print) dizendo qual coluna pertence a qual atributo e de que classe vem (descrever tudo isso no texto do evento)
 
-17. Adicionar a tabela de "nota fiscal" no layout de tabelas do relatório
+17. ~~Adicionar a tabela de "nota fiscal" no layout de tabelas do relatório~~ - *Cancelado. Não vai ter nota fiscal no relatório*
 
 18. Valores do relatório tem que bater com a massa de teste e remover o campo "data de pagamento" e "valor pago"
 
